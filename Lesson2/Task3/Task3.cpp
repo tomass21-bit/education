@@ -9,8 +9,8 @@ struct adress {
     std::string  city = "empty";
     std::string  street = "empty";
     std::string NumderHouse = "empty";
-    int NumberFlat = 0;
-    int index =0;
+    unsigned short NumberFlat = 0;
+    unsigned index =0;
 };
 void printStruct(const adress& a) {
     std::cout << "Страна : " << a.country<<std::endl<< "Город : " << a.city << std::endl
