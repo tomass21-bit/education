@@ -9,9 +9,9 @@
 
 struct card
 {
-    int score;
-    std::string name;
-    double money;
+    unsigned score =0;
+    std::string name ="unknown";
+    double money =0;
 
 };
 void edit(card& p, double summ ) {
@@ -21,17 +21,31 @@ int main()
 {
     SetConsoleOutputCP(1251);
     SetConsoleCP(1251);
-    double summ;
+    double summ = 0;
     card p;
 
     std::cout << "Введите номер счёта: ";
     std::cin >> p.score;
+    if (p.score < 0 || p.score> 999999999) {
+        std::cout << "Номер счета не может быть отрицательным или больше 9 знаков ";
+        return 0;
+    }
+    else
     std::cout << "Введите имя владельца: ";
     std::cin >> p.name;
+    do{
     std::cout << "Введите баланс: ";
     std::cin >> p.money;
-    std::cout << "Введите новый баланс: ";
-    std::cin >> summ;
+    if (p.money < 0){ std::cout << "Баланс не может быть отрицательным \n"; }
+    
+        
+    } while (p.money < 0);
+    do {
+        std::cout << "Введите новый баланс: ";
+        std::cin >> summ;
+        if (summ < 0) { std::cout << "Баланс не может быть отрицательным \n"; }
+        
+    } while (summ < 0);
     edit(p, summ);
     std::cout << "Ваш счёт: " << p.name  << ", "<< p.score << ", " <<p.money<<std::endl;
 

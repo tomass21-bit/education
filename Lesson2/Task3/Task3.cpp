@@ -5,12 +5,12 @@
 #include <string>
 #include <windows.h> 
 struct adress {
-    std::string  country;
-    std::string  city;
-    std::string  street;
-    std::string NumderHouse;
-    int NumberFlat;
-    int index;
+    std::string  country = "empty";
+    std::string  city = "empty";
+    std::string  street = "empty";
+    std::string NumderHouse = "empty";
+    int NumberFlat = 0;
+    int index =0;
 };
 void printStruct(const adress& a) {
     std::cout << "Страна : " << a.country<<std::endl<< "Город : " << a.city << std::endl
