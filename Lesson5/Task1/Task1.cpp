@@ -5,13 +5,14 @@
 #include <string>
 #include <clocale>
 
-class figura {
+class Figura {
 public:
     void get_sides_count() {
         std::cout << countstor << std::endl;
 
     }
-    figura() { countstor = 0, name = "Фигура"; }
+    Figura(int count, std::string name ) { countstor = count, this->name = name; }
+    Figura() { countstor = 0, name= "Фигура"; }
     void get_name() {
         std::cout << name << ": " ;
     }
@@ -24,17 +25,31 @@ protected:
 
 };
 
-class triple : public figura 
+class Triple : public Figura 
 {
 public:
-    triple() { countstor = 3, name = "Треугольник";
+    Triple() { 
+        countstor = 0, name = "Фигура";
+    }
+    Triple(int count, std::string name) : Figura ( count, name) {
+        /*if (count==3)
+        countstor = count , name = "Треугольник";
+        else 
+        std::cout << "У треугольника 3 стороны!" << std::endl;*/
     }
 };
 
-class quadr : public figura 
+class Quadr : public Figura 
 {
   public:
-    quadr() { countstor = 4, name = "Четырёхугольник"; }
+    Quadr() { countstor = 0, name = "Фигура"; }
+
+    Quadr(int count, std::string name) : Figura(count, name) {
+        /* if (count == 4)
+             countstor = 3, name = "Четырёхугольник";
+         else
+             std::cout << "У треугольника 3 стороны!" << std::endl;*/
+    }
 };
 
 int main()
@@ -42,16 +57,16 @@ int main()
     setlocale(LC_ALL, "Russian");
     std::cout << "Количество сторон : " << std::endl;
     
-    figura f;
+    Figura f;
     f.get_name();
     f.get_sides_count();
     
 
-    triple t;
+    Triple t (3, "Треугольник");
     t.get_name();
     t.get_sides_count();
    
-    quadr q;
+    Quadr q (4, "Четырёхугольник");
     q.get_name();
     q.get_sides_count();
     

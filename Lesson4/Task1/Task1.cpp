@@ -6,15 +6,15 @@
 #include <fstream>
 #include <clocale>
 #include <iomanip>
-class adress {
+class Adress {
 public:
-    adress(std::string city, std::string street, int number_house, int number_flat) {
+    Adress(std::string city, std::string street, int number_house, int number_flat) {
         this->city = city;
         this->street = street;
         this->number_house = number_house;
         this->number_flat = number_flat;
   } 
-    adress() {
+    Adress() {
         city = "ucnown";
         street = "ucnown";
         number_house = 0;
@@ -55,7 +55,7 @@ int main()
 
         fin >> buf;
         vol = stoi(buf);
-       adress  *arr = new adress[vol];
+       Adress  *arr = new Adress[vol];
 
         for (int i = 0; i < vol; ++i) {
             
@@ -100,7 +100,7 @@ int main()
                 exit(0);
             }
             
-            arr[i] = adress(city,street,number_house,number_flat);
+            arr[i] = Adress(city,street,number_house,number_flat);
         }
         fin.close();
 
