@@ -11,7 +11,7 @@ public:
         std::cout << countstor << std::endl;
 
     }
-    Figura(int count, std::string name ) { countstor = count, this->name = name; }
+   
     Figura() { countstor = 0, name= "Фигура"; }
     void get_name() {
         std::cout << name << ": " ;
@@ -21,35 +21,26 @@ public:
 protected:
     int countstor;
     std::string name;
-    
+    Figura(int count, std::string name) { countstor = count, this->name = name; }
 
 };
 
 class Triple : public Figura 
 {
 public:
-    Triple() { 
-        countstor = 0, name = "Фигура";
+    Triple(): Figura(3,"Треугольник") {
+        ; 
     }
-    Triple(int count, std::string name) : Figura ( count, name) {
-        /*if (count==3)
-        countstor = count , name = "Треугольник";
-        else 
-        std::cout << "У треугольника 3 стороны!" << std::endl;*/
-    }
+    
 };
 
 class Quadr : public Figura 
 {
-  public:
-    Quadr() { countstor = 0, name = "Фигура"; }
+  public: 
+      Quadr():Figura(4, "Четырехугольник")
+      {  }
 
-    Quadr(int count, std::string name) : Figura(count, name) {
-        /* if (count == 4)
-             countstor = 3, name = "Четырёхугольник";
-         else
-             std::cout << "У треугольника 3 стороны!" << std::endl;*/
-    }
+   
 };
 
 int main()
@@ -62,11 +53,11 @@ int main()
     f.get_sides_count();
     
 
-    Triple t (3, "Треугольник");
+    Triple t ;
     t.get_name();
     t.get_sides_count();
    
-    Quadr q (4, "Четырёхугольник");
+    Quadr q ;
     q.get_name();
     q.get_sides_count();
     

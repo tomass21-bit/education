@@ -10,12 +10,7 @@ public:
     void get_name() {
         std::cout << name << ": " << std::endl;
     }
-    Figura(int a, int b, int c, int d, int A,int B, int C, int D, std::string name) {
-        this->a = a, this->b = b, this->c = c, this->d = d, this->A = A, this->B = B, this->C = C, this->D = D, this->name = name;
-    }
-    Figura(int a, int b, int c, int A, int B, int C, std::string name) {
-        this->a = a, this->b = b, this->c = c, this->A = A, this->B = B, this->C = C, this->name = name;
-    }
+    
     Figura() {
         a = 0, b = 0, c = 0, d = 0, A = 0, B = 0, C = 0, D = 0, name = "Фигура";
     }
@@ -35,9 +30,13 @@ protected:
     int B;
     int C;
     int D;
-    const int dlina1 = 20;  // Значение для конструктора по умолчанию стороны а
-    const int dlina2 = 30;  // Значение для конструктора по умолчанию стороны b
-    
+   
+    Figura(int a, int b, int c, int d, int A, int B, int C, int D, std::string name) {
+        this->a = a, this->b = b, this->c = c, this->d = d, this->A = A, this->B = B, this->C = C, this->D = D, this->name = name;
+    }
+     Figura(int a, int b, int c, int A, int B, int C, std::string name) {
+        this->a = a, this->b = b, this->c = c, this->A = A, this->B = B, this->C = C, this->name = name;
+    }
     
 };
 
@@ -50,11 +49,12 @@ public:
                      angle << ":"<<"\t" << "A=" << A << "\t" << "B=" << B << "\t" << "C=" << C << std::endl << std::endl;
 
     }
-    Triple(int a, int b, int c, int A, int B, int C, std::string name) : Figura(a, b, c, A, B, C,name) {
+    
+    Triple() : Figura (20, 30, 40, 65, 80, 45, "Треугольник") {  }
+protected:
+    Triple(int a, int b, int c, int A, int B, int C, std::string name) : Figura(a, b, c, A, B, C, name) {
 
     }
-    Triple() { a=0, b=0, c=0, A=0, B=0, C=0, name = "Треугольник"; }
-    
 
 };
 
@@ -62,31 +62,23 @@ class Triple_pramoug : public Triple
 {
 public:
     
-    Triple_pramoug(int a, int b, int c, int A, int B, std::string name) : Triple (a, b, c, A, B, ugol , name) {
-        
-    }
-    Triple_pramoug() { a = 0, b = 0, c = 0, A = 0, B = 0, C =ugol , name = "Прямоугольный треугольник"; }
+    
+    Triple_pramoug() : Triple(30, 35, 50, 30, 60,ugol , "Прямоугольный треугольник") {  }
     
 };
 
 class Triple_ravnobed : public Triple
 {
 public:
-    Triple_ravnobed(int a, int b, int A, int B, std::string name ): Triple(a, b, a, A, B, A, name) {
-        
-    }
-    Triple_ravnobed() { a = 0, b = 0, c = 0, A = 0, B = 0, C = 0, name = "Равнобедренный треугольник"; }
+   
+    Triple_ravnobed() : Triple(20, 40, 20, 50, 70, 30, "Равнобедренный треугольник") {  }
     
 };
 class Triple_ravnostor : public Triple
 {
 public:
-    Triple_ravnostor(int a,int A, std::string name) : Triple(a, a, a, A, A, A, name) {
-        
-    }
-    Triple_ravnostor() {
-        a = 0, b = 0, c = 0, A = 0, B = 0, C = 0, name = "Равносторонний треугольник";
-    }
+    
+    Triple_ravnostor() : Triple(20, 20, 20, 60, 60, 60, "Равнобедренный треугольник") { }
 };
 
 class Four : public Figura {
@@ -96,54 +88,44 @@ public:
                     angle << ":"<<"\t" << "A=" << A << "\t" << "B=" << B << "\t" << "C=" << C << "\t" << "D=" << D << std::endl << std::endl;
 
     }
-    Four (int a, int b, int c, int d, int A, int B, int C, int D, std::string name) : Figura(a, b, c, d, A, B, C, D, name) {
-
-    }
-    Four() { a = 10, b = 7, c = 9, d=20, A = 75, B = 65, C = 65, D = 90, name = "Четырёхугольник"; }
-  
+    
+    Four(): Figura(20, 25, 40, 45, 60, 80, 90, 80, "Четырёхугольник") {  }
+  protected:
+      Four(int a, int b, int A, int B,  std::string name) : Figura(a, b, a, b, A, B, A, B, name) {  }
 };
 
 
 class Paralelogram : public Four
 {
 public:
-    Paralelogram(int a, int b, int A, int B, std::string name) : Four (a, b, a, b, A, B, A, B, name) {
-        this->  a = a, this-> b = b, this-> c = a, this-> d = b, this-> A = A , this-> B = B, this-> C = A , this->D = B, this->name = name;
-    }
+   
+    Paralelogram() :Four (20, 25, 120, 60, "Паралелограм") { }
 
-    Paralelogram() {
-        this->a = dlina1, this->b = dlina2, this->c = dlina1, this->d = dlina2, this->A = 60, this->B = 120, this->C = 60, this->D = 120, name = "Паралелограм";
-    }
-
+protected:
+    Paralelogram(int a, int b, int A, int B, std::string name) : Four(a, b,  A, B,  name) {  }
 };
 class Romb : public Paralelogram
 {
 public:
-    Romb(int a,  int A, int B, std::string name) : Paralelogram (a, a, A, B, name ) {
+    
+    Romb() :Paralelogram (25, 25, 130, 70, "Ромб") {
         
-    }
-    Romb() {
-        this->a = dlina1, this->b = dlina1, this->c = dlina1, this->d = dlina1, this->A = 60, this->B = 120, this->C = 60, this->D = 120, name = "Ромб";
     }
 };
 class Pramoug : public Paralelogram
 {
 public:
-    Pramoug(int a, int b, std::string name) : Paralelogram(a, b, ugol, ugol, name) {
-        
-    }
-    Pramoug() {
-        this->a = dlina1, this->b = dlina2, this->c = dlina1, this->d = dlina2, this->A = ugol, this->B = ugol, this->C = ugol, this->D = ugol, name = "Прямоугольник";
-    }
+   
+    Pramoug() :Paralelogram(20, 40, ugol, ugol, "Прямоугольник") { }
+protected:
+    Pramoug(int a, std::string name) : Paralelogram(a, a, ugol, ugol, name) {  }
 };
 class Quad : public Pramoug
 {
 public:
-    Quad(int a, std::string name) : Pramoug (a, a,  name) {
+   
+    Quad() : Pramoug(20,  "Квадрат") {
         
-    }
-    Quad() {
-        this->a = dlina2, this->b = dlina2, this->c = dlina2, this->d = dlina2, A = ugol, B = ugol, C = ugol, D = ugol, name = "Квадрат";
     }
 };
 
@@ -152,39 +134,39 @@ int main()
 {
     setlocale(LC_ALL, "Russian");
     
-    Triple t (20,30,40,65,80,45,"Треугольник");
+    Triple t ;
     t.get_name();
     t.get_parametrs();
     
-    Triple_pramoug pr(30, 35, 50, 30,60, "Прямоугольный треугольник");
+    Triple_pramoug pr;
     pr.get_name();
     pr.get_parametrs();
    
-    Triple_ravnobed rb(20,50,70,30, "Равнобедренный треугольник" );
+    Triple_ravnobed rb;
     rb.get_name();
     rb.get_parametrs();
    
-    Triple_ravnostor rs(20,60, "Равносторонний треугольник" );
+    Triple_ravnostor rs;
     rs.get_name();
     rs.get_parametrs();
 
-    Four f (20, 25, 40, 45 , 60, 80, 90, 80, "Четырёхугольник" );
+    Four f ;
     f.get_name();
     f.get_parametrs();
 
-    Pramoug pra (30,40, "Прямоугольник");
+    Pramoug pra ;
     pra.get_name();
     pra.get_parametrs();
     
-    Quad q (35, "Квадрат");
+    Quad q ;
     q.get_name();
     q.get_parametrs();
     
-    Paralelogram par (20,25,120,60, "Паралелограм");
+    Paralelogram par ;
     par.get_name();
     par.get_parametrs();
 
-    Romb r(40,50,80, "Ромб");
+    Romb r;
     r.get_name();
     r.get_parametrs();
 
