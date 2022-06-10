@@ -4,58 +4,62 @@
 #include <iostream>
 #include <string>
 #include <clocale>
-const int ugol = 90; // Прямой угол
+
 class Figura {
 public:
-    void get_name() {
-        std::cout << name << ": " << std::endl;
-    }
     
-    Figura() {
-        a = 0, b = 0, c = 0, d = 0, A = 0, B = 0, C = 0, D = 0, name = "Фигура";
-    }
+    
+    
 
-    
+    void print() {
+        std::cout << name << ":\n";
+        print_sides();
+        print_angles();
+    }
 
 
 protected:
     std::string stor = "Стороны";
     std::string angle = "Углы";
     std::string name;
-    int a;
-    int b;
-    int c;
-    int d;
-    int A;
-    int B;
-    int C;
-    int D;
+    Figura(std::string name) {
+        this->name=name;
+    }
    
-    Figura(int a, int b, int c, int d, int A, int B, int C, int D, std::string name) {
-        this->a = a, this->b = b, this->c = c, this->d = d, this->A = A, this->B = B, this->C = C, this->D = D, this->name = name;
-    }
-     Figura(int a, int b, int c, int A, int B, int C, std::string name) {
-        this->a = a, this->b = b, this->c = c, this->A = A, this->B = B, this->C = C, this->name = name;
-    }
-    
+   
+     
+     std::string get_name() {
+         return name;
+     }
+     virtual void print_sides() {}
+     virtual void print_angles() {}
 };
 
 
 
 class Triple : public Figura {
 public:
-    void get_parametrs() {
-        std::cout << stor << ":"<<" " << "a=" << a << "\t" << "b=" << b << "\t" << "c=" << c << std::endl <<
-                     angle << ":"<<"\t" << "A=" << A << "\t" << "B=" << B << "\t" << "C=" << C << std::endl << std::endl;
-
-    }
-    
-    Triple() : Figura (20, 30, 40, 65, 80, 45, "Треугольник") {  }
+    Triple() : Figura("Треугольник") { a = 30, b = 35, c = 50, A = 30, B = 60, C = 70; }
+   
 protected:
-    Triple(int a, int b, int c, int A, int B, int C, std::string name) : Figura(a, b, c, A, B, C, name) {
+    Triple(int a, int b, int c, int A, int B, int C, std::string name) : Figura(name) {
+        this->a = a, this->b = b, this->c = c, this->A = A, this->B = B, this->C = C;
+    }
+    void print_sides() override {
+        std::cout << stor << ":" << " " << "a=" << a << "\t" << "b=" << b << "\t" << "c=" << c << std::endl;
 
     }
-
+    void print_angles() override {
+        std::cout << angle << ":" << "\t" << "A=" << A << "\t" << "B=" << B << "\t" << "C=" << C << std::endl << std::endl;
+    }
+private:
+    int a;
+    int b;
+    int c;
+    int A;
+    int B;
+    int C;
+    
 };
 
 class Triple_pramoug : public Triple
@@ -63,7 +67,7 @@ class Triple_pramoug : public Triple
 public:
     
     
-    Triple_pramoug() : Triple(30, 35, 50, 30, 60,ugol , "Прямоугольный треугольник") {  }
+    Triple_pramoug() : Triple(30, 35, 50, 30, 60,90 , "Прямоугольный треугольник") {  }
     
 };
 
@@ -78,20 +82,40 @@ class Triple_ravnostor : public Triple
 {
 public:
     
-    Triple_ravnostor() : Triple(20, 20, 20, 60, 60, 60, "Равнобедренный треугольник") { }
+    Triple_ravnostor() : Triple(20, 20, 20, 60, 60, 60, "Равноcторонний треугольник") { }
 };
 
 class Four : public Figura {
 public:
-    void get_parametrs() {
-        std::cout << stor << ":"<<" " << "a=" << a << "\t" << "b=" << b << "\t" << "c=" << c << "\t" << "d=" << d << std::endl <<
-                    angle << ":"<<"\t" << "A=" << A << "\t" << "B=" << B << "\t" << "C=" << C << "\t" << "D=" << D << std::endl << std::endl;
+    
+    Four() : Figura("Четырехугольник") { a = 30, b = 35, c = 50, d=30,  A = 30, B = 60, C = 70, D=90 ; }
+   
+    void print_sides() override {
+        
+            std::cout << stor << ":" << " " << "a=" << a << "\t" << "b=" << b << "\t" << "c=" << c << "\t" << "d=" << d << std::endl;
+        }
+                   
+            
+     void print_angles() override {
+            std::cout << angle << ":"<<"\t" << "A=" << A << "\t" << "B=" << B << "\t" << "C=" << C << "\t" << "D=" << D << std::endl << std::endl;
 
     }
     
-    Four(): Figura(20, 25, 40, 45, 60, 80, 90, 80, "Четырёхугольник") {  }
+    
   protected:
-      Four(int a, int b, int A, int B,  std::string name) : Figura(a, b, a, b, A, B, A, B, name) {  }
+      
+      Four(int a, int b, int A, int B,  std::string name) : Figura(name) {
+          this->a = a, this->b = b, this->c = a, this->d = b, this->A = A, this->B = B, this->C = A, this->D = B;
+      }
+private:
+    int a;
+    int b;
+    int c;
+    int d;
+    int A;
+    int B;
+    int C;
+    int D;
 };
 
 
@@ -116,9 +140,9 @@ class Pramoug : public Paralelogram
 {
 public:
    
-    Pramoug() :Paralelogram(20, 40, ugol, ugol, "Прямоугольник") { }
+    Pramoug() :Paralelogram(20, 40, 90, 90, "Прямоугольник") { }
 protected:
-    Pramoug(int a, std::string name) : Paralelogram(a, a, ugol, ugol, name) {  }
+    Pramoug(int a, std::string name) : Paralelogram(a, a, 90, 90, name) {  }
 };
 class Quad : public Pramoug
 {
@@ -135,40 +159,31 @@ int main()
     setlocale(LC_ALL, "Russian");
     
     Triple t ;
-    t.get_name();
-    t.get_parametrs();
+    t.print();
+    
     
     Triple_pramoug pr;
-    pr.get_name();
-    pr.get_parametrs();
+    pr.print();
    
     Triple_ravnobed rb;
-    rb.get_name();
-    rb.get_parametrs();
+    rb.print();
    
     Triple_ravnostor rs;
-    rs.get_name();
-    rs.get_parametrs();
-
+    rs.print();
     Four f ;
-    f.get_name();
-    f.get_parametrs();
+    f.print();
 
     Pramoug pra ;
-    pra.get_name();
-    pra.get_parametrs();
+    pra.print();
     
     Quad q ;
-    q.get_name();
-    q.get_parametrs();
+    q.print();
     
     Paralelogram par ;
-    par.get_name();
-    par.get_parametrs();
+    par.print();
 
     Romb r;
-    r.get_name();
-    r.get_parametrs();
+    r.print();
 
    
 

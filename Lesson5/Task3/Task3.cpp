@@ -4,10 +4,33 @@
 #include <iostream>
 #include <string>
 #include <clocale>
-const int ugol = 90; // Прямой угол
+
 class Figura {
 public:
 
+    void print() {
+        show_info();
+        print_sides();
+        print_angles();
+    }
+
+    
+
+    
+
+
+protected:
+    std::string stor = "Стороны";
+    std::string angle = "Углы";
+    std::string name;
+    int number_stor;
+    std::string states;
+   
+    Figura(int number_stor, std::string name) {this->number_stor = number_stor, this->name = name;
+    }
+
+    virtual void print_sides() {}
+    virtual void print_angles() {}
     virtual void show_info() {
         std::cout << name << ": " << std::endl;
         if (check(number_stor) == true) {
@@ -18,61 +41,34 @@ public:
         }
         std::cout << "Количество сторон: " << number_stor << std::endl;
     }
-
     virtual bool check(int number_stor) {
         if (number_stor == 0)
             return true;
         else
             return false;
     }
-
-    Figura() {
-        a = 0, b = 0, c = 0, d = 0, A = 0, B = 0, C = 0, D = 0, name = "Фигура";
-    }
-
-
-protected:
-    std::string stor = "Стороны";
-    std::string angle = "Углы";
-    std::string name;
-    int number_stor;
-    std::string states;
-    int a;
-    int b;
-    int c;
-    int d;
-    int A;
-    int B;
-    int C;
-    int D;
-
-    Figura(int number_stor, int a, int b, int c, int d, int A, int B, int C, int D, std::string name) {
-       this->number_stor= number_stor, this->a = a, this->b = b, this->c = c, this->d = d, this->A = A, this->B = B, this->C = C, this->D = D, this->name = name;
-    }
-    Figura(int number_stor, int a, int b, int c, int A, int B, int C, std::string name) {
-        this->number_stor = number_stor, this->a = a, this->b = b, this->c = c, this->A = A, this->B = B, this->C = C, this->name = name;
-    }
-
 };
 
 
 
 class Triple : public Figura {
 public:
+    Triple() : Figura(3,"Треугольник") { a = 30, b = 35, c = 50, A = 30, B = 60, C = 70; }
+    
     void show_info() override
     {
         Figura::show_info();
     }
-    void get_parametrs() {
-        std::cout << stor << ":" << " " << "a=" << a << "\t" << "b=" << b << "\t" << "c=" << c << std::endl <<
-            angle << ":" << "\t" << "A=" << A << "\t" << "B=" << B << "\t" << "C=" << C << std::endl << std::endl;
+protected:
+    Triple(int a, int b, int c, int A, int B, int C, std::string name) : Figura(3,name) {
+        this->a = a, this->b = b, this->c = c, this->A = A, this->B = B, this->C = C;
+    }
+    void print_sides() override {
+        std::cout << stor << ":" << " " << "a=" << a << "\t" << "b=" << b << "\t" << "c=" << c << std::endl;
 
     }
-
-    Triple() : Figura(3,20, 30, 40, 65, 80, 45, "Треугольник") {  }
-protected:
-    Triple(int a, int b, int c, int A, int B, int C, std::string name) : Figura(3, a, b, c, A, B, C, name) {
-
+    void print_angles() override {
+        std::cout << angle << ":" << "\t" << "A=" << A << "\t" << "B=" << B << "\t" << "C=" << C << std::endl << std::endl;
     }
     bool check(int number_stor) override {
         if (number_stor == 3 && (A + B + C) == 180)
@@ -81,6 +77,14 @@ protected:
             return false;
 
     }
+
+    int a;
+    int b;
+    int c;
+    int A;
+    int B;
+    int C;
+   
 };
 
 class Triple_pramoug : public Triple
@@ -91,7 +95,7 @@ public:
         Figura::show_info();
     }
 
-    Triple_pramoug() : Triple(30, 35, 50, 30, 60, ugol, "Прямоугольный треугольник") {  }
+    Triple_pramoug() : Triple(30, 35, 50, 30, 60, 90, "Прямоугольный треугольник") {  }
 
 
 protected:
@@ -150,21 +154,23 @@ protected:
 
 class Four : public Figura {
 public:
+    
+    Four() : Figura(4,"Четырехугольник") { a = 30, b = 35, c = 50, d = 30, A = 30, B = 60, C = 70, D = 90; }
     void show_info() override
     {
         Figura::show_info();
     }
-    void get_parametrs() {
-        std::cout << stor << ":" << " " << "a=" << a << "\t" << "b=" << b << "\t" << "c=" << c << "\t" << "d=" << d << std::endl <<
-            angle << ":" << "\t" << "A=" << A << "\t" << "B=" << B << "\t" << "C=" << C << "\t" << "D=" << D << std::endl << std::endl;
 
+    void print_sides() override {
+
+        std::cout << stor << ":" << " " << "a=" << a << "\t" << "b=" << b << "\t" << "c=" << c << "\t" << "d=" << d << std::endl;
     }
 
-    Four() : Figura(4, 20, 25, 40, 45, 60, 80, 90, 80, "Четырёхугольник") {  }
-protected:
-    
-    Four(int a, int b, int A, int B, std::string name) : Figura(4, a, b, a, b, A, B, A, B, name) {  }
 
+    void print_angles() override {
+        std::cout << angle << ":" << "\t" << "A=" << A << "\t" << "B=" << B << "\t" << "C=" << C << "\t" << "D=" << D << std::endl << std::endl;
+
+    }
     bool check(int number_stor) override {
         if (number_stor == 4 && (A + B + C + D) == 360)
             return true;
@@ -172,6 +178,23 @@ protected:
             return false;
 
     }
+
+protected:
+
+    Four(int a, int b, int A, int B, std::string name) : Figura(4,name) {
+        this->a = a, this->b = b, this->c = a, this->d = b, this->A = A, this->B = B, this->C = A, this->D = B;
+    }
+
+    int a;
+    int b;
+    int c;
+    int d;
+    int A;
+    int B;
+    int C;
+    int D;
+
+    
 };
 
 
@@ -225,9 +248,9 @@ public:
         Figura::show_info();
     }
 
-    Pramoug() :Paralelogram(20, 40, ugol, ugol, "Прямоугольник") { }
+    Pramoug() :Paralelogram(20, 40,90, 90, "Прямоугольник") { }
 protected:
-    Pramoug(int a, std::string name) : Paralelogram(a, a, ugol, ugol, name) {  }
+    Pramoug(int a, std::string name) : Paralelogram(a, a, 90, 90, name) {  }
 
     bool check(int number_stor) override {
 
@@ -274,40 +297,30 @@ int main()
     setlocale(LC_ALL, "Russian");
 
     Triple t;
-    t.show_info();
-    t.get_parametrs();
+    t.print();
+    
 
     Triple_pramoug pr;
-    pr.show_info();
-    pr.get_parametrs();
+    pr.print();
 
     Triple_ravnobed rb;
-    rb.show_info();
-    rb.get_parametrs();
+    rb.print();
 
     Triple_ravnostor rs;
-    rs.show_info();
-    rs.get_parametrs();
+    rs.print();
 
     Four f;
-    f.show_info();
-    f.get_parametrs();
+    f.print();
 
     Pramoug pra;
-    pra.show_info();
-    pra.get_parametrs();
-
+    pra.print();
     Quad q;
-    q.show_info();
-    q.get_parametrs();
-
+    q.print();
     Paralelogram par;
-    par.show_info();
-    par.get_parametrs();
+    par.print();
 
     Romb r;
-    r.show_info();
-    r.get_parametrs();
+    r.print();
 
 
 

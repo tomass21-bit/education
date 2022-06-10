@@ -7,38 +7,39 @@
 
 class Figura {
 public:
-    void get_sides_count() {
-        std::cout << countstor << std::endl;
-
+    Figura() { countstor = 0, name = "Фигура"; }
+    
+    
+    void print() {
+        std::cout << get_name() << ": " << get_sides_count() << '\n';
     }
-   
-    Figura() { countstor = 0, name= "Фигура"; }
-    void get_name() {
-        std::cout << name << ": " ;
-    }
-
 
 protected:
     int countstor;
     std::string name;
     Figura(int count, std::string name) { countstor = count, this->name = name; }
+    int get_sides_count() {
 
+        return  countstor;
+    }
+
+    std::string get_name() {
+
+        return name;
+    }
 };
 
 class Triple : public Figura 
 {
 public:
-    Triple(): Figura(3,"Треугольник") {
-        ; 
-    }
+    Triple(): Figura(3,"Треугольник") { }
     
 };
 
 class Quadr : public Figura 
 {
   public: 
-      Quadr():Figura(4, "Четырехугольник")
-      {  }
+      Quadr():Figura(4, "Четырехугольник") {  }
 
    
 };
@@ -49,17 +50,18 @@ int main()
     std::cout << "Количество сторон : " << std::endl;
     
     Figura f;
-    f.get_name();
-    f.get_sides_count();
+    f.print();
+    
     
 
     Triple t ;
-    t.get_name();
-    t.get_sides_count();
+   
+    t.print();
+  
    
     Quadr q ;
-    q.get_name();
-    q.get_sides_count();
+    q.print();
+    
     
 }
 
