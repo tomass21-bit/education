@@ -16,7 +16,7 @@ public:
         print_sides();
         print_angles();
     }
-
+    
 
 protected:
     std::string stor = "Стороны";
@@ -33,6 +33,7 @@ protected:
      }
      virtual void print_sides() {}
      virtual void print_angles() {}
+     
 };
 
 
@@ -40,6 +41,9 @@ protected:
 class Triple : public Figura {
 public:
     Triple() : Figura("Треугольник") { a = 30, b = 35, c = 50, A = 30, B = 60, C = 70; }
+    Triple(int a, int b, int c, int A, int B, int C ) : Figura("Треугольник") {
+        this->a = a, this->b = b, this->c = c, this->A = A, this->B = B, this->C = C;
+    }
    
 protected:
     Triple(int a, int b, int c, int A, int B, int C, std::string name) : Figura(name) {
@@ -67,21 +71,21 @@ class Triple_pramoug : public Triple
 public:
     
     
-    Triple_pramoug() : Triple(30, 35, 50, 30, 60,90 , "Прямоугольный треугольник") {  }
-    
+    Triple_pramoug(int a, int b, int c, int A, int B) : Triple(a, b, c, A, B, 90 , "Прямоугольный треугольник") {  }
+    Triple_pramoug() : Triple(30, 35, 50, 30, 60, 90, "Прямоугольный треугольник") {  }
 };
 
 class Triple_ravnobed : public Triple
 {
 public:
-   
+    Triple_ravnobed(int a, int b,  int A, int B) : Triple(a, b, a, A, B, A, "Равнобедренный треугольник") {  }
     Triple_ravnobed() : Triple(20, 40, 20, 50, 70, 30, "Равнобедренный треугольник") {  }
     
 };
 class Triple_ravnostor : public Triple
 {
 public:
-    
+    Triple_ravnostor(int a) : Triple(a, a, a, 60, 60, 60, "Равноcторонний треугольник") {  }
     Triple_ravnostor() : Triple(20, 20, 20, 60, 60, 60, "Равноcторонний треугольник") { }
 };
 
@@ -89,7 +93,9 @@ class Four : public Figura {
 public:
     
     Four() : Figura("Четырехугольник") { a = 30, b = 35, c = 50, d=30,  A = 30, B = 60, C = 70, D=90 ; }
-   
+    Four(int a, int b, int с, int в, int A, int B, int C, int D, std::string name) : Figura("Четырехугольник") {
+        this->a = a, this->b = b, this->c = c, this->d = d, this->A = A, this->B = B, this->C = C, this->D = D;
+    }
     void print_sides() override {
         
             std::cout << stor << ":" << " " << "a=" << a << "\t" << "b=" << b << "\t" << "c=" << c << "\t" << "d=" << d << std::endl;
@@ -124,33 +130,31 @@ class Paralelogram : public Four
 public:
    
     Paralelogram() :Four (20, 25, 120, 60, "Паралелограм") { }
-
+    Paralelogram(int a, int b,  int A, int B) : Four(a, b, a, b, A, B, A, B, "Паралелограм") {  }
 protected:
     Paralelogram(int a, int b, int A, int B, std::string name) : Four(a, b,  A, B,  name) {  }
 };
 class Romb : public Paralelogram
 {
 public:
-    
-    Romb() :Paralelogram (25, 25, 130, 70, "Ромб") {
-        
-    }
+    Romb(int a,  int A, int B) : Paralelogram(a, a, A, B, "Ромб") {  }
+    Romb() :Paralelogram (25, 25, 130, 70, "Ромб") {  }
 };
 class Pramoug : public Paralelogram
 {
 public:
-   
+    
     Pramoug() :Paralelogram(20, 40, 90, 90, "Прямоугольник") { }
+    Pramoug(int a, int b ) : Paralelogram(a, b, 90, 90, "Прямоугольник") {  }
 protected:
     Pramoug(int a, std::string name) : Paralelogram(a, a, 90, 90, name) {  }
 };
 class Quad : public Pramoug
 {
 public:
-   
-    Quad() : Pramoug(20,  "Квадрат") {
-        
-    }
+    
+    Quad() : Pramoug(20,  "Квадрат") { }
+    
 };
 
 

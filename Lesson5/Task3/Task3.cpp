@@ -33,7 +33,7 @@ protected:
     virtual void print_angles() {}
     virtual void show_info() {
         std::cout << name << ": " << std::endl;
-        if (check(number_stor) == true) {
+        if (check() == true) {
             std::cout << "Правильная" << std::endl;
         }
         else {
@@ -41,7 +41,7 @@ protected:
         }
         std::cout << "Количество сторон: " << number_stor << std::endl;
     }
-    virtual bool check(int number_stor) {
+    virtual bool check() {
         if (number_stor == 0)
             return true;
         else
@@ -54,7 +54,9 @@ protected:
 class Triple : public Figura {
 public:
     Triple() : Figura(3,"Треугольник") { a = 30, b = 35, c = 50, A = 30, B = 60, C = 70; }
-    
+    Triple(int a, int b, int c, int A, int B, int C) : Figura(3,"Треугольник") {
+        this->a = a, this->b = b, this->c = c, this->A = A, this->B = B, this->C = C;
+    }
     void show_info() override
     {
         Figura::show_info();
@@ -70,7 +72,7 @@ protected:
     void print_angles() override {
         std::cout << angle << ":" << "\t" << "A=" << A << "\t" << "B=" << B << "\t" << "C=" << C << std::endl << std::endl;
     }
-    bool check(int number_stor) override {
+    bool check( ) override {
         if (number_stor == 3 && (A + B + C) == 180)
             return true;
         else
@@ -96,13 +98,13 @@ public:
     }
 
     Triple_pramoug() : Triple(30, 35, 50, 30, 60, 90, "Прямоугольный треугольник") {  }
-
+    Triple_pramoug(int a, int b, int c, int A, int B) : Triple(a, b, c, A, B, 90, "Прямоугольный треугольник") {  }
 
 protected:
 
-    bool check(int number_stor) override {
+    bool check( ) override {
 
-        if (Triple::check(number_stor) == true && C == 90)
+        if (Triple::check( ) == true && C == 90)
             return true;
         else
             return false;
@@ -119,11 +121,11 @@ public:
     }
 
     Triple_ravnobed() : Triple(20, 40, 20, 50, 70, 30, "Равнобедренный треугольник") {  }
-
+    Triple_ravnobed(int a, int b, int A, int B) : Triple(a, b, a, A, B, A, "Равнобедренный треугольник") {  }
 protected:
-    bool check(int number_stor) override {
+    bool check() override {
 
-        if (Triple::check(number_stor) == true && a == c && A == C)
+        if (Triple::check() == true && a == c && A == C)
             return true;
         else
             return false;
@@ -141,10 +143,11 @@ public:
 
 
     Triple_ravnostor() : Triple(20, 20, 20, 60, 60, 60, "Равнобедренный треугольник") { }
+    Triple_ravnostor(int a) : Triple(a, a, a, 60, 60, 60, "Равноcторонний треугольник") {  }
 protected:
-    bool check(int number_stor) override {
+    bool check() override {
 
-        if (Triple::check(number_stor) == true && a == b && b == c && A == 60 && B == 60)
+        if (Triple::check() == true && a == b && b == c && A == 60 && B == 60)
             return true;
         else
             return false;
@@ -156,7 +159,11 @@ class Four : public Figura {
 public:
     
     Four() : Figura(4,"Четырехугольник") { a = 30, b = 35, c = 50, d = 30, A = 30, B = 60, C = 70, D = 90; }
+    Four(int a, int b, int с, int в, int A, int B, int C, int D, std::string name) : Figura(4,"Четырехугольник") {
+        this->a = a, this->b = b, this->c = c, this->d = d, this->A = A, this->B = B, this->C = C, this->D = D;
+    }
     void show_info() override
+
     {
         Figura::show_info();
     }
@@ -171,7 +178,7 @@ public:
         std::cout << angle << ":" << "\t" << "A=" << A << "\t" << "B=" << B << "\t" << "C=" << C << "\t" << "D=" << D << std::endl << std::endl;
 
     }
-    bool check(int number_stor) override {
+    bool check() override {
         if (number_stor == 4 && (A + B + C + D) == 360)
             return true;
         else
@@ -201,18 +208,19 @@ protected:
 class Paralelogram : public Four
 {
 public:
+    
+    Paralelogram() :Four(20, 25, 120, 60, "Паралелограм") { }
+    Paralelogram(int a, int b, int A, int B) : Four(a, b, a, b, A, B, A, B, "Паралелограм") {  }
     void show_info() override
     {
         Figura::show_info();
     }
-    Paralelogram() :Four(20, 25, 120, 60, "Паралелограм") { }
-
 protected:
     Paralelogram(int a, int b, int A, int B, std::string name) : Four(a, b, A, B, name) {  }
 
-    bool check(int number_stor) override {
+    bool check() override {
 
-        if (Four::check(number_stor) == true && A == C && B == D && a == c && b == d)
+        if (Four::check() == true && A == C && B == D && a == c && b == d)
             return true;
         else
             return false;
@@ -223,17 +231,16 @@ class Romb : public Paralelogram
 {
 public:
 
-    Romb() :Paralelogram(25, 25, 130, 70, "Ромб") {
-
-    }
+    Romb() :Paralelogram(25, 25, 130, 70, "Ромб") { }
+    Romb(int a, int A, int B) : Paralelogram(a, a, A, B, "Ромб") {  }
     void show_info() override
     {
         Figura::show_info();
     }
 protected:
-    bool check(int number_stor) override {
+    bool check() override {
 
-        if (Paralelogram::check(number_stor) == true && a + c == b + d)
+        if (Paralelogram::check() == true && a + c == b + d)
             return true;
         else
             return false;
@@ -243,18 +250,20 @@ protected:
 class Pramoug : public Paralelogram
 {
 public:
+    
+    Pramoug() :Paralelogram(20, 40,90, 90, "Прямоугольник") { }
+    Pramoug(int a, int b) : Paralelogram(a, b, 90, 90, "Прямоугольник") {  }
     void show_info() override
     {
         Figura::show_info();
     }
 
-    Pramoug() :Paralelogram(20, 40,90, 90, "Прямоугольник") { }
 protected:
     Pramoug(int a, std::string name) : Paralelogram(a, a, 90, 90, name) {  }
 
-    bool check(int number_stor) override {
+    bool check() override {
 
-        if (Paralelogram::check(number_stor) == true && A == B && C == D)
+        if (Paralelogram::check() == true && A == B && C == D)
             return true;
         else
             return false;
@@ -266,17 +275,16 @@ class Quad : public Pramoug
 {
 public:
 
-    Quad() : Pramoug(20, "Квадрат") {
-
-    }
+    Quad() : Pramoug(20, "Квадрат") { }
+    Quad(int a) : Pramoug(a, "Квадрат") { }
     void show_info() override
     {
         Figura::show_info();
     }
 protected:
-    bool check(int number_stor) override {
+    bool check() override {
 
-        if (Pramoug::check(number_stor) == true && (a == b && c == d))
+        if (Pramoug::check() == true && (a == b && c == d))
             return true;
         else
             return false;
