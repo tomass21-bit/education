@@ -159,7 +159,7 @@ class Four : public Figura {
 public:
     
     Four() : Figura(4,"Четырехугольник") { a = 30, b = 35, c = 50, d = 30, A = 30, B = 60, C = 70, D = 90; }
-    Four(int a, int b, int с, int в, int A, int B, int C, int D, std::string name) : Figura(4,"Четырехугольник") {
+    Four(int a, int b, int c, int d , int A, int B, int C, int D) : Figura(4,"Четырехугольник") {
         this->a = a, this->b = b, this->c = c, this->d = d, this->A = A, this->B = B, this->C = C, this->D = D;
     }
     void show_info() override
@@ -210,7 +210,7 @@ class Paralelogram : public Four
 public:
     
     Paralelogram() :Four(20, 25, 120, 60, "Паралелограм") { }
-    Paralelogram(int a, int b, int A, int B) : Four(a, b, a, b, A, B, A, B, "Паралелограм") {  }
+    Paralelogram(int a, int b, int A, int B) : Four(a, b, A, B, "Паралелограм") {  }
     void show_info() override
     {
         Figura::show_info();
@@ -304,31 +304,74 @@ int main()
 {
     setlocale(LC_ALL, "Russian");
 
-    Triple t;
-    t.print();
-    
+    //T/*riple t;
+    //t.print();
 
-    Triple_pramoug pr;
-    pr.print();
 
-    Triple_ravnobed rb;
-    rb.print();
+    //Triple_pramoug pr;
+    //pr.print();
 
-    Triple_ravnostor rs;
-    rs.print();
+    //Triple_ravnobed rb;
+    //rb.print();
 
-    Four f;
-    f.print();
+    //Triple_ravnostor rs;
+    //rs.print();
 
-    Pramoug pra;
-    pra.print();
-    Quad q;
-    q.print();
-    Paralelogram par;
-    par.print();
+    //Four f;
+    //f.print();
 
-    Romb r;
-    r.print();
+    //Pramoug pra;
+    //pra.print();
+    //Quad q;
+    //q.print();
+    //Paralelogram par;
+    //par.print();
+
+    //Romb r;
+    //r.print();*/
+        
+     
+     Figura* p_fig = nullptr;
+
+
+
+    Triple t(15, 20, 30, 50, 60, 70);
+    p_fig = &t;
+    p_fig->print();
+
+    Triple_pramoug pr(20, 15, 30, 50, 60);
+    p_fig = &pr;
+    p_fig->print();
+
+    Triple_ravnobed rb(20, 30, 50, 40);
+    p_fig = &rb;
+    p_fig->print();
+
+    Triple_ravnostor rs(10);
+    p_fig = &rs;
+    p_fig->print();
+
+
+
+    Four f(10, 20, 30, 40, 50, 60, 70, 80);
+    p_fig = &f;
+    p_fig->print();
+
+    Pramoug pra(10, 20);
+    p_fig = &pra;
+    p_fig->print();
+
+    Quad q(40);
+    p_fig = &q;
+    p_fig->print();
+
+    Paralelogram par(20, 30, 30, 40);
+    p_fig = &par;
+    p_fig->print();
+
+    Romb r(30, 30, 150);
+    p_fig = &r;
+    p_fig->print();
 
 
 
