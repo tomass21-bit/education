@@ -1,193 +1,24 @@
 ﻿// Task3.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 //
 
+#include "Figura.h"
+#include "Four.h"
+#include "Paralelogram.h"
+#include "Pramoug.h"
+#include "quad.h"
+#include "Romb.h"
+#include "Triple.h"
+#include "Triple_pramoug.h"
+#include "Triple_ravnobed.h"
+#include "Triple_ravnostor.h"
 #include <iostream>
 #include <string>
 #include <clocale>
-const int ugol = 90; // Прямой угол
 
 
 
 
 
-
-class Triple_pramoug : public Triple
-{
-public:
-    void show_info() override
-    {
-        Figura::show_info();
-    }
-
-    Triple_pramoug() : Triple(30, 35, 50, 30, 60, ugol, "Прямоугольный треугольник") {  }
-
-
-protected:
-
-    bool check(int number_stor) override {
-
-        if (Triple::check(number_stor) == true && C == 90)
-            return true;
-        else
-            return false;
-
-    }
-};
-
-class Triple_ravnobed : public Triple
-{
-public:
-    void show_info() override
-    {
-        Figura::show_info();
-    }
-
-    Triple_ravnobed() : Triple(20, 40, 20, 50, 70, 30, "Равнобедренный треугольник") {  }
-
-protected:
-    bool check(int number_stor) override {
-
-        if (Triple::check(number_stor) == true && a == c && A == C)
-            return true;
-        else
-            return false;
-
-    }
-
-};
-class Triple_ravnostor : public Triple
-{
-public:
-    void show_info() override
-    {
-        Figura::show_info();
-    }
-
-
-    Triple_ravnostor() : Triple(20, 20, 20, 60, 60, 60, "Равнобедренный треугольник") { }
-protected:
-    bool check(int number_stor) override {
-
-        if (Triple::check(number_stor) == true && a == b && b == c && A == 60 && B == 60)
-            return true;
-        else
-            return false;
-
-    }
-};
-
-class Four : public Figura {
-public:
-    void show_info() override
-    {
-        Figura::show_info();
-    }
-    void get_parametrs() {
-        std::cout << stor << ":" << " " << "a=" << a << "\t" << "b=" << b << "\t" << "c=" << c << "\t" << "d=" << d << std::endl <<
-            angle << ":" << "\t" << "A=" << A << "\t" << "B=" << B << "\t" << "C=" << C << "\t" << "D=" << D << std::endl << std::endl;
-
-    }
-
-    Four() : Figura(4, 20, 25, 40, 45, 60, 80, 90, 80, "Четырёхугольник") {  }
-protected:
-
-    Four(int a, int b, int A, int B, std::string name) : Figura(4, a, b, a, b, A, B, A, B, name) {  }
-
-    bool check(int number_stor) override {
-        if (number_stor == 4 && (A + B + C + D) == 360)
-            return true;
-        else
-            return false;
-
-    }
-};
-
-
-class Paralelogram : public Four
-{
-public:
-    void show_info() override
-    {
-        Figura::show_info();
-    }
-    Paralelogram() :Four(20, 25, 120, 60, "Паралелограм") { }
-
-protected:
-    Paralelogram(int a, int b, int A, int B, std::string name) : Four(a, b, A, B, name) {  }
-
-    bool check(int number_stor) override {
-
-        if (Four::check(number_stor) == true && A == C && B == D && a == c && b == d)
-            return true;
-        else
-            return false;
-
-    }
-};
-class Romb : public Paralelogram
-{
-public:
-
-    Romb() :Paralelogram(25, 25, 130, 70, "Ромб") {
-
-    }
-    void show_info() override
-    {
-        Figura::show_info();
-    }
-protected:
-    bool check(int number_stor) override {
-
-        if (Paralelogram::check(number_stor) == true && a + c == b + d)
-            return true;
-        else
-            return false;
-
-    }
-};
-class Pramoug : public Paralelogram
-{
-public:
-    void show_info() override
-    {
-        Figura::show_info();
-    }
-
-    Pramoug() :Paralelogram(20, 40, ugol, ugol, "Прямоугольник") { }
-protected:
-    Pramoug(int a, std::string name) : Paralelogram(a, a, ugol, ugol, name) {  }
-
-    bool check(int number_stor) override {
-
-        if (Paralelogram::check(number_stor) == true && A == B && C == D)
-            return true;
-        else
-            return false;
-
-    }
-
-};
-class Quad : public Pramoug
-{
-public:
-
-    Quad() : Pramoug(20, "Квадрат") {
-
-    }
-    void show_info() override
-    {
-        Figura::show_info();
-    }
-protected:
-    bool check(int number_stor) override {
-
-        if (Pramoug::check(number_stor) == true && (a == b && c == d))
-            return true;
-        else
-            return false;
-
-    }
-};
 
 
 
@@ -201,46 +32,55 @@ int main()
 {
     setlocale(LC_ALL, "Russian");
 
-    Triple t;
-    t.show_info();
-    t.get_parametrs();
 
-    Triple_pramoug pr;
-    pr.show_info();
-    pr.get_parametrs();
 
-    Triple_ravnobed rb;
-    rb.show_info();
-    rb.get_parametrs();
+    Figura* p_fig = nullptr;
 
-    Triple_ravnostor rs;
-    rs.show_info();
-    rs.get_parametrs();
 
-    Four f;
-    f.show_info();
-    f.get_parametrs();
 
-    Pramoug pra;
-    pra.show_info();
-    pra.get_parametrs();
+    Triple t(15, 20, 30, 50, 60, 70);
+    p_fig = &t;
+    p_fig->print();
 
-    Quad q;
-    q.show_info();
-    q.get_parametrs();
+    Triple_pramoug pr(20, 15, 30, 50, 60);
+    p_fig = &pr;
+    p_fig->print();
 
-    Paralelogram par;
-    par.show_info();
-    par.get_parametrs();
+    Triple_ravnobed rb(20, 30, 50, 40);
+    p_fig = &rb;
+    p_fig->print();
 
-    Romb r;
-    r.show_info();
-    r.get_parametrs();
+    Triple_ravnostor rs(10);
+    p_fig = &rs;
+    p_fig->print();
+
+
+
+    Four f(10, 20, 30, 40, 50, 60, 70, 80);
+    p_fig = &f;
+    p_fig->print();
+
+    Pramoug pra(10, 20);
+    p_fig = &pra;
+    p_fig->print();
+
+    Quad q(40);
+    p_fig = &q;
+    p_fig->print();
+
+    Paralelogram par(20, 30, 30, 40);
+    p_fig = &par;
+    p_fig->print();
+
+    Romb r(30, 30, 150);
+    p_fig = &r;
+    p_fig->print();
 
 
 
 
 }
+
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
 // Отладка программы: F5 или меню "Отладка" > "Запустить отладку"

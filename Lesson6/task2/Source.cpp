@@ -29,19 +29,19 @@
 
         if (num1 != 0) {
             this->num1 = num1;
-            return 1;
+            return true;
         }
         else
-            return 0;
+            return false;
 
     }
 
     bool Calculator::set_num2(double num2) {
         if (num2 != 0) {
             this->num2 = num2;
-            return 1;
+            return true;
         }
         else
-            return 0;
+            return false;
     }
 

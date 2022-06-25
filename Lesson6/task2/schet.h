@@ -1,8 +1,7 @@
 #pragma once
 class Calculator {
 public:  
-	double num1 = 0;
-	double num2 = 0;
+	
 
 double add();
 double multiply();
@@ -14,5 +13,7 @@ bool set_num1(double num1);
 
 bool set_num2(double num2);
 
-
+private:
+	double num1 = 0;
+	double num2 = 0;
 };

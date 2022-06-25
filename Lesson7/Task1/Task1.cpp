@@ -1,65 +1,42 @@
-﻿// task2.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
+﻿// Task1.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 //
-
+#define MODE 1  // определение идентификатора mode
 #include <iostream>
 #include <windows.h>
-#include "schet.h"
-
-
-
-
+int add(int a, int b) {
+    return a + b;
+}
 int main()
 {
-    
     SetConsoleOutputCP(1251);
     SetConsoleCP(1251);
-    double num1 = 0;
-    double num2 = 0;
-    Calculator set1;
+#if defined MODE
+#if MODE==0
+    std::cout << "Работаю в режиме тренировки\n";
+#elif MODE ==1
+    std::cout << "Работаю в боевом режиме\n";
+    int a = 0;
+    int b = 0;
+    std::cout << "Введите число 1: ";
+    std::cin >> a;
+    std::cout << "\n";
 
+    std::cout << "Введите число 2: ";
+    std::cin >> b;
+    std::cout << "\n";
+    
+    std::cout << "Результат сложения: "<< add(a, b);
+#else 
+    std::cout << "Неизвестный режим. Завершение работы\n";
+#endif
 
-
-    do {
-        std::cout << "Введите num1: ";
-        std::cin >> num1;
-        std::cout << "\n ";
-        num1 = set1.set_num1(num1);
-        if (num1 == false) {
-            std::cout << "Неверный ввод!\n";
-        }
-    } while (num1 == false);
-
-    do {
-        std::cout << "Введите num2: ";
-        std::cin >> num2;
-        std::cout << "\n ";
-        num2 = set1.set_num2(num2);
-        if (num2 == false) {
-            std::cout << "Неверный ввод!\n";
-        }
-    } while (num2 == false);
-
-
-
-
-
-
-    std::cout << "num1 + num2 = " << set1.add() << std::endl;
-
-    std::cout << "num1 * num2 = " << set1.multiply() << std::endl;
-
-    std::cout << "num1 - num2 = " << set1.subtract_1_2() << std::endl;
-
-    std::cout << "num2 - num1 = " << set1.subtract_2_1() << std::endl;
-
-    std::cout << "num1 / num2 = " << set1.divide_1_2() << std::endl;
-
-    std::cout << "num2 / num1 = " << set1.divide_2_1() << std::endl;
-
-
-
-
+#else
+#error Необходимо определить идентификатор MODE
+    
+#endif
+    
 }
+
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
 // Отладка программы: F5 или меню "Отладка" > "Запустить отладку"
 

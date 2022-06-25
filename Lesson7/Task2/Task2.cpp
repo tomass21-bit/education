@@ -1,65 +1,21 @@
-﻿// task2.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
+﻿// Task2.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 //
-
+#define SUB(a,b)  ((a)-(b))
 #include <iostream>
 #include <windows.h>
-#include "schet.h"
-
-
-
-
 int main()
 {
+	SetConsoleOutputCP(1251);
+	SetConsoleCP(1251);
+	int a = 6;
+	int b = 5;
+	int c = 2;
+	std::cout << SUB(a, b) << std::endl;
+	std::cout << SUB(a, b) * c << std::endl;
+	std::cout << SUB(a, b + c) * c << std::endl;
     
-    SetConsoleOutputCP(1251);
-    SetConsoleCP(1251);
-    double num1 = 0;
-    double num2 = 0;
-    Calculator set1;
-
-
-
-    do {
-        std::cout << "Введите num1: ";
-        std::cin >> num1;
-        std::cout << "\n ";
-        num1 = set1.set_num1(num1);
-        if (num1 == false) {
-            std::cout << "Неверный ввод!\n";
-        }
-    } while (num1 == false);
-
-    do {
-        std::cout << "Введите num2: ";
-        std::cin >> num2;
-        std::cout << "\n ";
-        num2 = set1.set_num2(num2);
-        if (num2 == false) {
-            std::cout << "Неверный ввод!\n";
-        }
-    } while (num2 == false);
-
-
-
-
-
-
-    std::cout << "num1 + num2 = " << set1.add() << std::endl;
-
-    std::cout << "num1 * num2 = " << set1.multiply() << std::endl;
-
-    std::cout << "num1 - num2 = " << set1.subtract_1_2() << std::endl;
-
-    std::cout << "num2 - num1 = " << set1.subtract_2_1() << std::endl;
-
-    std::cout << "num1 / num2 = " << set1.divide_1_2() << std::endl;
-
-    std::cout << "num2 / num1 = " << set1.divide_2_1() << std::endl;
-
-
-
-
 }
+
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
 // Отладка программы: F5 или меню "Отладка" > "Запустить отладку"
 
