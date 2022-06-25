@@ -4,12 +4,7 @@
 #include "Pramoug.h"
 #include  "quad.h"
 #include "Romb.h"
-//#include "Triple.h"
-//#include "Triple_pramoug.h"
-//#include "Triple_ravnobed.h"
-//#include "Triple_ravnostor.h"
 
-#include <string>
 
 
    Romb:: Romb() :Paralelogram(25, 25, 130, 70, "Ромб") { }

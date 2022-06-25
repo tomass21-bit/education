@@ -1,16 +1,12 @@
 #include "Figura.h"
-//#include "Four.h"
-//#include "Paralelogram.h"
-//#include "Pramoug.h"
-//#include  "quad.h"
-//#include "Romb.h"
+
 #include "Triple.h"
 #include "Triple_pramoug.h"
 #include "Triple_ravnobed.h"
 #include "Triple_ravnostor.h"
-#include <string>
 
-//class Figura;
+
+
 
     Triple:: Triple() : Figura(3, "Треугольник") { a = 30, b = 35, c = 50, A = 30, B = 60, C = 70; }
     Triple::Triple(int a, int b, int c, int A, int B, int C) : Figura(3, "Треугольник") {

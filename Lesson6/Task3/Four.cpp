@@ -4,15 +4,10 @@
 #include "Pramoug.h"
 #include  "quad.h"
 #include "Romb.h"
-//#include "Triple.h"
-//#include "Triple_pramoug.h"
-//#include "Triple_ravnobed.h"
-//#include "Triple_ravnostor.h"
-
-#include <string>
 
 
-//class Figura;
+
+
 
   
    Four::Four(int a, int b, int c, int d, int A, int B, int C, int D) : Figura(4, "Четырехугольник") {

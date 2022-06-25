@@ -4,11 +4,7 @@
 #include "Pramoug.h"
 #include  "quad.h"
 #include "Romb.h"
-//#include "Triple.h"
-//#include "Triple_pramoug.h"
-//#include "Triple_ravnobed.h"
 
-#include <string>
 
 
    Quad:: Quad() : Pramoug(20, " вадрат") { }
