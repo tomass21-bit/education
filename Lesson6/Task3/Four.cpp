@@ -1,4 +1,4 @@
-#include "Figura.h"
+ï»¿#include "Figura.h"
 #include "Four.h"
 #include "Paralelogram.h"
 #include "Pramoug.h"
@@ -10,7 +10,7 @@
 
 
   
-   Four::Four(int a, int b, int c, int d, int A, int B, int C, int D) : Figura(4, "×åòûðåõóãîëüíèê") {
+   Four::Four(int a, int b, int c, int d, int A, int B, int C, int D) : Figura(4, "â€žÐµÑ‚Ñ‹Ñ€ÐµÑ…ÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸Ðº") {
         this->a = a, this->b = b, this->c = c, this->d = d, this->A = A, this->B = B, this->C = C, this->D = D;
     }
    void Four::show_info()   {

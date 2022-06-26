@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include <clocale>
-#include "Header.h"
+#include "Calculator.h"
 
 int main()
 {
@@ -37,7 +37,7 @@ int main()
         break;
     
     }
-
+    return 0;
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"

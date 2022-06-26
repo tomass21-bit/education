@@ -1,4 +1,4 @@
-#include "Figura.h"
+п»ї#include "Figura.h"
 #include "Four.h"
 #include "Paralelogram.h"
 #include "Pramoug.h"
@@ -7,8 +7,8 @@
 
 
 
-Pramoug:: Pramoug() :Paralelogram(20, 40, 90, 90, "Прямоугольник") { }
-Pramoug::Pramoug(int a, int b) : Paralelogram(a, b, 90, 90, "Прямоугольник") {  }
+Pramoug:: Pramoug() :Paralelogram(20, 40, 90, 90, "РџСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРє") { }
+Pramoug::Pramoug(int a, int b) : Paralelogram(a, b, 90, 90, "РџСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРє") {  }
     void Pramoug::show_info()  
     {
         Figura::show_info();

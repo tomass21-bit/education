@@ -1,4 +1,4 @@
-#include "Figura.h"
+Ôªø#include "Figura.h"
 #include "Four.h"
 #include "Paralelogram.h"
 #include "Pramoug.h"
@@ -7,8 +7,8 @@
 
 
 
-   Romb:: Romb() :Paralelogram(25, 25, 130, 70, "–ÓÏ·") { }
-   Romb::Romb(int a, int A, int B) : Paralelogram(a, a, A, B, "–ÓÏ·") {  }
+   Romb:: Romb() :Paralelogram(25, 25, 130, 70, "–†–æ–º–±") { }
+   Romb::Romb(int a, int A, int B) : Paralelogram(a, a, A, B, "–†–æ–º–±") {  }
     void Romb::show_info() 
     {
         Figura::show_info();

@@ -1,4 +1,4 @@
-#include "Figura.h"
+п»ї#include "Figura.h"
 #include "Four.h"
 #include "Paralelogram.h"
 #include "Pramoug.h"
@@ -7,8 +7,8 @@
 
 
 
-   Quad:: Quad() : Pramoug(20, "Квадрат") { }
-   Quad::Quad(int a) : Pramoug(a, "Квадрат") { }
+   Quad:: Quad() : Pramoug(20, "В РІР°РґСЂР°С‚") { }
+   Quad::Quad(int a) : Pramoug(a, "В РІР°РґСЂР°С‚") { }
     void Quad::show_info()  
     {
         Figura::show_info();

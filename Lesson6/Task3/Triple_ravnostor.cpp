@@ -1,4 +1,4 @@
-#include "Figura.h"
+п»ї#include "Figura.h"
 
 #include "Triple.h"
 #include "Triple_pramoug.h"
@@ -14,8 +14,8 @@
     }
 
 
-    Triple_ravnostor::Triple_ravnostor() : Triple(20, 20, 20, 60, 60, 60, "Равнобедренный треугольник") { }
-    Triple_ravnostor::Triple_ravnostor(int a) : Triple(a, a, a, 60, 60, 60, "Равноcторонний треугольник") {  }
+    Triple_ravnostor::Triple_ravnostor() : Triple(20, 20, 20, 60, 60, 60, "Р Р°РІРЅРѕР±РµРґСЂРµРЅРЅС‹Р№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє") { }
+    Triple_ravnostor::Triple_ravnostor(int a) : Triple(a, a, a, 60, 60, 60, "Р Р°РІРЅРѕcС‚РѕСЂРѕРЅРЅРёР№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє") {  }
 
     bool Triple_ravnostor::check() {
 

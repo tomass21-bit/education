@@ -12,8 +12,8 @@ public:
 
 
 protected:
-    std::string stor = "Стороны";
-    std::string angle = "Углы";
+    std::string stor = "РЎС‚РѕСЂРѕРЅС‹";
+    std::string angle = "РЈРіР»С‹";
     std::string name;
     int number_stor= 0;
     std::string states;

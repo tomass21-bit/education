@@ -1,4 +1,4 @@
-#include "Figura.h"
+ï»¿#include "Figura.h"
 
 #include "Triple.h"
 #include "Triple_pramoug.h"
@@ -8,8 +8,8 @@
 
 
 
-    Triple:: Triple() : Figura(3, "Òðåóãîëüíèê") { a = 30, b = 35, c = 50, A = 30, B = 60, C = 70; }
-    Triple::Triple(int a, int b, int c, int A, int B, int C) : Figura(3, "Òðåóãîëüíèê") {
+    Triple:: Triple() : Figura(3, "â€œÑ€ÐµÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸Ðº") { a = 30, b = 35, c = 50, A = 30, B = 60, C = 70; }
+    Triple::Triple(int a, int b, int c, int A, int B, int C) : Figura(3, "â€œÑ€ÐµÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸Ðº") {
         this->a = a, this->b = b, this->c = c, this->A = A, this->B = B, this->C = C;
     }
     void  Triple::show_info() {

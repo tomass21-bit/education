@@ -1,4 +1,4 @@
-#include "Figura.h"
+п»ї#include "Figura.h"
 #include <iostream>
 #include <string>
 
@@ -21,12 +21,12 @@
      void Figura::show_info() {
         std::cout << name << ": " << std::endl;
         if (check() == true) {
-            std::cout << "Правильная" << std::endl;
+            std::cout << "РџСЂР°РІРёР»СЊРЅР°СЏ" << std::endl;
         }
         else {
-            std::cout << "Не правильная" << std::endl;
+            std::cout << "РќРµ РїСЂР°РІРёР»СЊРЅР°СЏ" << std::endl;
         }
-        std::cout << "Количество сторон: " << number_stor << std::endl;
+        std::cout << "РљРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚РѕСЂРѕРЅ: " << number_stor << std::endl;
     }
      bool Figura::check() {
         if (number_stor == 0)

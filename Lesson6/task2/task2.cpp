@@ -3,58 +3,59 @@
 
 #include <iostream>
 #include <windows.h>
-#include "schet.h"
-
+#include <string>
+#include "Counter.h"
 
 
 
 int main()
 {
-    
     SetConsoleOutputCP(1251);
     SetConsoleCP(1251);
-    double num1 = 0;
-    double num2 = 0;
-    Calculator set1;
-
+    std::string vopros;
+    int count;
+    std::cout << "Вы хотите указать начальное значение счётчика? Введите да или нет: ";
+    std::cin >> vopros;
+    std::cout << std::endl;
+    Counter schet;
+    if (vopros == "Да" || vopros == "да") {
+        std::cout << "Введите начальное значение счётчика: ";
+        std::cin >> count;
+        std::cout << std::endl;
+        schet.set(count);
+    }
+    else if (vopros == "Нет" || vopros == "нет") {
+        schet.set(1);
+    }
+    else
+    {
+        std::cout << "Вы ввели неправильный ответ, досвидания! " << std::endl;
+        return 0;
+    }
 
 
     do {
-        std::cout << "Введите num1: ";
-        std::cin >> num1;
-        std::cout << "\n ";
-        num1 = set1.set_num1(num1);
-        if (num1 == false) {
-            std::cout << "Неверный ввод!\n";
+        std::cout << "Введите команду ('+', '-', '=' или 'x'): ";
+        std::cin >> vopros;
+        std::cout << std::endl;
+        if (vopros == "+") {
+            schet.plus();
         }
-    } while (num1 == false);
-
-    do {
-        std::cout << "Введите num2: ";
-        std::cin >> num2;
-        std::cout << "\n ";
-        num2 = set1.set_num2(num2);
-        if (num2 == false) {
-            std::cout << "Неверный ввод!\n";
+        else if (vopros == "-") {
+            schet.minus();
         }
-    } while (num2 == false);
-
-
-
-
-
-
-    std::cout << "num1 + num2 = " << set1.add() << std::endl;
-
-    std::cout << "num1 * num2 = " << set1.multiply() << std::endl;
-
-    std::cout << "num1 - num2 = " << set1.subtract_1_2() << std::endl;
-
-    std::cout << "num2 - num1 = " << set1.subtract_2_1() << std::endl;
-
-    std::cout << "num1 / num2 = " << set1.divide_1_2() << std::endl;
-
-    std::cout << "num2 / num1 = " << set1.divide_2_1() << std::endl;
+        else if (vopros == "=") {
+            schet.ravno();
+        }
+        else if (vopros == "-") {
+            schet.minus();
+        }
+        else if (vopros == "x" || vopros == "х") {
+            schet.stop();
+        }
+        else
+            std::cout << "Введена неизвестная команда! \n";
+    } while (vopros != "x");
 
 
 

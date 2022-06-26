@@ -1,4 +1,4 @@
-#include "Figura.h"
+п»ї#include "Figura.h"
 
 #include "Triple.h"
 #include "Triple_pramoug.h"
@@ -12,8 +12,8 @@
         Figura::show_info();
     }
 
- Triple_pramoug::Triple_pramoug() : Triple(30, 35, 50, 30, 60, 90, "Прямоугольный треугольник") {  }
- Triple_pramoug::Triple_pramoug(int a, int b, int c, int A, int B) : Triple(a, b, c, A, B, 90, "Прямоугольный треугольник") {  }
+ Triple_pramoug::Triple_pramoug() : Triple(30, 35, 50, 30, 60, 90, "РџСЂСЏРјРѕСѓРіРѕР»СЊРЅС‹Р№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє") {  }
+ Triple_pramoug::Triple_pramoug(int a, int b, int c, int A, int B) : Triple(a, b, c, A, B, 90, "РџСЂСЏРјРѕСѓРіРѕР»СЊРЅС‹Р№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє") {  }
 
 
     bool Triple_pramoug::check()  {
