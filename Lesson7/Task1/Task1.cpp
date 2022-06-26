@@ -3,9 +3,11 @@
 #define MODE 1  // определение идентификатора mode
 #include <iostream>
 #include <windows.h>
+#if MODE == 1
 int add(int a, int b) {
     return a + b;
-}
+};
+#endif;
 int main()
 {
     SetConsoleOutputCP(1251);
@@ -14,6 +16,7 @@ int main()
 #if MODE==0
     std::cout << "Работаю в режиме тренировки\n";
 #elif MODE ==1
+    
     std::cout << "Работаю в боевом режиме\n";
     int a = 0;
     int b = 0;
