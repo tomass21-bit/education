@@ -7,8 +7,8 @@
 
 
 
-   Quad:: Quad() : Pramoug(20, " вадрат") { }
-   Quad::Quad(int a) : Pramoug(a, " вадрат") { }
+   Quad:: Quad() : Pramoug(20, " Квадрат") { }
+   Quad::Quad(int a) : Pramoug(a, " Квадрат") { }
     void Quad::show_info()  
     {
         Figura::show_info();

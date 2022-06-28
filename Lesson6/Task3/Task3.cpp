@@ -22,7 +22,9 @@
 
 
 
-
+void printe(Figura &figure) {
+    figure.print();
+}
 
 
 
@@ -34,47 +36,37 @@ int main()
 
 
 
-    Figura* p_fig = nullptr;
-
+    
 
 
     Triple t(15, 20, 30, 50, 60, 70);
-    p_fig = &t;
-    p_fig->print();
+    printe(t);
 
     Triple_pramoug pr(20, 15, 30, 50, 60);
-    p_fig = &pr;
-    p_fig->print();
+    printe(pr);
 
     Triple_ravnobed rb(20, 30, 50, 40);
-    p_fig = &rb;
-    p_fig->print();
+    printe(rb);
 
     Triple_ravnostor rs(10);
-    p_fig = &rs;
-    p_fig->print();
+    printe(rs);
 
 
 
     Four f(10, 20, 30, 40, 50, 60, 70, 80);
-    p_fig = &f;
-    p_fig->print();
+    printe(f);
 
     Pramoug pra(10, 20);
-    p_fig = &pra;
-    p_fig->print();
+    printe(pra);
 
     Quad q(40);
-    p_fig = &q;
-    p_fig->print();
+    printe(q);
 
     Paralelogram par(20, 30, 30, 40);
-    p_fig = &par;
-    p_fig->print();
+    printe(par);
 
     Romb r(30, 30, 150);
-    p_fig = &r;
-    p_fig->print();
+    printe(r);
 
 
 

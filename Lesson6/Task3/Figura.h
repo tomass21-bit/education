@@ -1,11 +1,11 @@
-#pragma once
+﻿#pragma once
 
 #include <string>
 class Figura {
 public:
 
-    void print();
-
+    void  print();
+    
 
 
 

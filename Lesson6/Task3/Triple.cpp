@@ -8,8 +8,8 @@
 
 
 
-    Triple:: Triple() : Figura(3, "“реугольник") { a = 30, b = 35, c = 50, A = 30, B = 60, C = 70; }
-    Triple::Triple(int a, int b, int c, int A, int B, int C) : Figura(3, "“реугольник") {
+    Triple:: Triple() : Figura(3, "Треугольник") { a = 30, b = 35, c = 50, A = 30, B = 60, C = 70; }
+    Triple::Triple(int a, int b, int c, int A, int B, int C) : Figura(3, "Треугольник") {
         this->a = a, this->b = b, this->c = c, this->A = A, this->B = B, this->C = C;
     }
     void  Triple::show_info() {

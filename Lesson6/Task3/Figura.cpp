@@ -6,8 +6,8 @@
 
 
 
-
-     void Figura:: print() {
+   
+     void  Figura:: print() {
         show_info();
         print_sides();
         print_angles();
