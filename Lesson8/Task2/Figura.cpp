@@ -16,6 +16,7 @@
     }
      Figura::Figura(int number_stor, std::string name) {
         
+        
          this->number_stor = number_stor, this->name = name;
     }
     
@@ -25,18 +26,13 @@
          std::cout << name << " ";
      }
      void Figura::show_info() {
+         std::cout << "Создана" << std::endl;
         
-        if (check() == true) {
-            std::cout << "Создан" << std::endl;
-        }
-        else {
-            std::cout << "Не создан. Причина: " << std::endl;
-        }
         
     }
-     bool Figura::check() {
+   std::string Figura::check() {
         if (number_stor == 0)
-            return true;
+            return " Создана";
         else
-            return false;
+            return  " Не создана. Причина: количество сторон не равно 0 ";
     }

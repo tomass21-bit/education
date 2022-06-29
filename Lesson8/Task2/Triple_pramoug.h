@@ -9,7 +9,7 @@ public:
     Triple_pramoug();
     Triple_pramoug(int a, int b, int c, int A, int B);
 
-protected:
 
-    bool check() override;
+
+    
 };

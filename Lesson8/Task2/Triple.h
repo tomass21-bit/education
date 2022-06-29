@@ -12,7 +12,7 @@ protected:
     Triple(int a, int b, int c, int A, int B, int C, std::string name);
     void print_sides() override;
     void print_angles() override;
-    bool check() override;
+    std::string check() ;
    
 
     int a=0;

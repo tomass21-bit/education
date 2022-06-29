@@ -9,5 +9,5 @@ public:
     Quad(int a);
     void show_info() override;
 protected:
-    bool check() override;
+    
 };

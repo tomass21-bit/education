@@ -53,8 +53,8 @@ int main()
 
 
 
-        Four f(10, 20, 30, 40, 50, 60, 70, 80);
-        print(f);
+        /*Four f(10, 20, 30, 40, 50, 60, 70, 80);
+        print(f);*/
 
         /*Pramoug pra(10, 20);
         print(pra);
@@ -65,7 +65,7 @@ int main()
         Paralelogram par(20, 30, 30, 40);
         print(par);*/
 
-        Romb r(30, 30, 150);
+        Romb r(30, 35, 150);
         print(r);
         
     }

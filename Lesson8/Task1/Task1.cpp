@@ -8,7 +8,9 @@
 class bad_length : public std::exception
 {
 public:
-    const char* what() const override { return "Вы ввели слово запретной длины! До свидания"; }
+    bad_length(std::string error): exception(" ") {
+        std::cout << error ;
+    }
    
 };
 
@@ -17,7 +19,7 @@ int function(std::string str, int forbidden_length) {
         int size = str.length();
 
     
-        if (size == forbidden_length) throw bad_length();
+        if (size == forbidden_length) throw bad_length( "Вы ввели слово запретной длины! До свидания. Слово повлекшее завершение програмы "+ str + " запрещенный размер " + std::to_string(forbidden_length) );
         
         return size;
 }

@@ -16,11 +16,4 @@
  Triple_pramoug::Triple_pramoug(int a, int b, int c, int A, int B) : Triple(a, b, c, A, B, 90, "Прямоугольный треугольник") {  }
 
 
-    bool Triple_pramoug::check()  {
-
-        if (Triple::check() == true && C == 90)
-            return true;
-        else
-            return false;
-
-    }
+    

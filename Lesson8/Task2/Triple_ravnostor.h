@@ -9,6 +9,5 @@ public:
 
     Triple_ravnostor();
     Triple_ravnostor(int a);
-protected:
-    bool check() override;
+
 };

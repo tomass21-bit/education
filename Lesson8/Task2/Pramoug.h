@@ -12,6 +12,6 @@ public:
 protected:
     Pramoug(int a, std::string name);
 
-    bool check() override;
+    
 
 };

@@ -24,7 +24,7 @@ protected:
     virtual void print_sides();
     virtual void print_angles();
     virtual void show_info();
-    virtual bool check();
+    std::string check();
     void names();
    
 

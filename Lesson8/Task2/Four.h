@@ -12,7 +12,7 @@ public:
 
 
     void print_angles() override;
-    bool check() override;
+    std::string check() ;
 
 protected:
 

@@ -14,11 +14,4 @@
         Figura::show_info();
     }
 
-    bool  Quad::check()  {
-
-        if (Pramoug::check() == true && (a == b && c == d))
-            return true;
-        else
-            return false;
-
-    }
+   

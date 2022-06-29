@@ -17,12 +17,5 @@ Pramoug::Pramoug(int a, int b) : Paralelogram(a, b, 90, 90, "Прямоугол�
 
     Pramoug::Pramoug(int a, std::string name) : Paralelogram(a, a, 90, 90, name) {  }
 
-    bool Pramoug::check()  {
-
-        if (Paralelogram::check() == true && A == B && C == D)
-            return true;
-        else
-            return false;
-
-    }
+   
 

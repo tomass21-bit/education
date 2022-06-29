@@ -14,11 +14,4 @@
         Figura::show_info();
     }
 
-    bool Romb::check()  {
-
-        if (Paralelogram::check() == true && a + c == b + d)
-            return true;
-        else
-            return false;
-
-    }
+   

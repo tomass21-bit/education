@@ -9,5 +9,5 @@ public:
     Romb(int a, int A, int B);
     void show_info() override;
 protected:
-    bool check() override;
+    
 };

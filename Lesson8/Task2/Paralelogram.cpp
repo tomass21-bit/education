@@ -16,11 +16,4 @@ Paralelogram::Paralelogram(int a, int b, int A, int B) : Four(a, b, A, B, "Па�
 
     Paralelogram::Paralelogram(int a, int b, int A, int B, std::string name) : Four(a, b, A, B, name) {  }
 
-    bool Paralelogram::check()  {
-
-        if (Four::check() == true && A == C && B == D && a == c && b == d)
-            return true;
-        else
-            return false;
-
-    }
+    
