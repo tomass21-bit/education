@@ -25,15 +25,20 @@ int main()
                 } while (!(c > 0 && c < 6));
 
     switch (c) {
-    case 1: summ(a, b);
+    case 1: std::cout << a << " плюс " << b << " = " << summ(a, b) << std::endl;
         break;
-    case 2: minus(a, b);
+    case 2: std::cout << a << " минус " << b << " = " << minus(a, b) << std::endl; 
         break;
-    case 3: times(a, b);
+    case 3: std::cout << a << " умножить " << b << " = " << times(a, b) << std::endl; 
         break;
-    case 4: dev(a, b);
+    case 4:
+        if (b == 0) {
+            std::cout << " Делить на ноль нельзя! " << std::endl;
+        }
+        else
+            std::cout << a << " делить " << b << " = " << dev(a, b) << std::endl; 
         break;
-    case 5: abs(a, b);
+    case 5: std::cout << a << " в степени  " << b << " = " << abs(a, b) << std::endl;
         break;
     
     }

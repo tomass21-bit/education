@@ -1,42 +1,33 @@
 ﻿#include <iostream>
 #include "Calculator.h" 
-void summ(int a, int b) {
-	std::cout << a << " плюс " << b << " = " << a + b << std::endl;
+int summ(int a, int b) {
+	return a + b ;
 
 }
 
 
-void minus(int a, int b) {
-	std::cout << a << " минус " << b << " = " << a - b << std::endl;
+int minus(int a, int b) {
+	return a - b ;
 
 }
-void times(int a, int b) {
-	std::cout << a << " умножить " << b << " = " << a * b << std::endl;
+int times(int a, int b) {
+	return a * b ;
 
 }
 
-void dev(int a, int b) {
-	if (b == 0) {
-		std::cout << " Делить на ноль нельзя! " << std::endl;
-	}
-	else
-		std::cout << a << " делить " << b << " = " << a / b << std::endl;
+double dev(int a, int b) {
+	return a / b;
 	
 }
 
-void abs(int a, int b) {
-	long int c=1;
+long int abs(int a, int b) {
+	int powered = 1;
 	for (int i = 0; i < b; ++i) {
-		if (b == 0) {
-			c = 1;
-		}
-		else if (b == 1) {
-			c = a;
-		}
-		else
-			c = c * a;
-		
+		powered *= a;
 	}
-	std::cout << a << " в степени  " << b << " = " << c  << std::endl;
+	return powered;
+		
+	
+	
 
 }

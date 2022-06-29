@@ -1,6 +1,6 @@
 #pragma once
-void summ(int a, int b);
-void minus(int a, int b);
-void times(int a, int b);
-void dev(int a, int b);
-void abs(int a, int b);
+int summ(int a, int b);
+int minus(int a, int b);
+int times(int a, int b);
+double dev(int a, int b);
+long int abs(int a, int b);
