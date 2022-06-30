@@ -1,0 +1,13 @@
+# ninja log v5
+24	973	6783080672458115	CMakeFiles/Task2.dir/Quad.cpp.obj	be90df0063ff0e71
+41	975	6783080672458115	CMakeFiles/Task2.dir/Triple_ravnostor.cpp.obj	50a31db2ecd76e89
+32	996	6783080672458115	CMakeFiles/Task2.dir/Triple_ravnobed.cpp.obj	4068bbf8c375ea35
+1	1002	6783080672788192	CMakeFiles/Task2.dir/Task3.cpp.obj	499d9a029b55ed90
+20	1008	6783080672928228	CMakeFiles/Task2.dir/Paralelogram.cpp.obj	d546583879226982
+28	1009	6783080672848204	CMakeFiles/Task2.dir/Romb.cpp.obj	5a6962aa72f4e0b1
+9	1012	6783080672988244	CMakeFiles/Task2.dir/Triple.cpp.obj	d13a683e2d4efd88
+12	1013	6783080672968231	CMakeFiles/Task2.dir/Figura.cpp.obj	e73a5da93d8c6da2
+16	1014	6783080672978240	CMakeFiles/Task2.dir/Pramoug.cpp.obj	9b8af3b806d18d1
+37	1017	6783080673058252	CMakeFiles/Task2.dir/Triple_pramoug.cpp.obj	979926390ba3261a
+5	1018	6783080673088261	CMakeFiles/Task2.dir/Four.cpp.obj	b7ec43607df9d2f1
+1018	1779	6783080680394626	Task2.exe	1b5f0149d8eed218

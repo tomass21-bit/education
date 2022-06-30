@@ -1,0 +1,10 @@
+# ninja log v5
+0	389	6782927921812264	CMakeFiles/my_first_cmake_project.dir/my_first_cmake_program.cpp.obj	db1748cec71b22c1
+390	844	6782927926102131	my_first_cmake_project.exe	bbe79d48ceeaa04c
+0	566	6782928699145715	CMakeFiles/my_first_cmake_project.dir/my_first_cmake_program.cpp.obj	db1748cec71b22c1
+567	792	6782928700826090	my_first_cmake_project.exe	bbe79d48ceeaa04c
+1	550	6782931275352384	CMakeFiles/my_first_cmake_project.dir/my_first_cmake_program.cpp.obj	db1748cec71b22c1
+550	776	6782931276902656	my_first_cmake_project.exe	bbe79d48ceeaa04c
+1	545	6782932217927270	CMakeFiles/my_first_cmake_project.dir/my_first_cmake_program.cpp.obj	db1748cec71b22c1
+0	579	6782933198758609	CMakeFiles/my_first_cmake_project.dir/my_first_cmake_program.cpp.obj	db1748cec71b22c1
+0	626	6782933370956580	my_first_cmake_project.exe	bbe79d48ceeaa04c
