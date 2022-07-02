@@ -7,7 +7,7 @@ public:
 
     Paralelogram();
     Paralelogram(int a, int b, int A, int B);
-    void show_info() override;
+   
 protected:
     Paralelogram(int a, int b, int A, int B, std::string name);
 

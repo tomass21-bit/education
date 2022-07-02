@@ -22,7 +22,7 @@
 
 
 void print(Figura& fig) {
-    fig.print();
+    std::cout<<fig.print_info();
 }
 
 
@@ -39,17 +39,17 @@ int main()
 
     try {
         
-        Triple t(15, 20, 30, 50, 60, 70);
-       print(t);
+        /*Triple t(15, 20, 30, 50, 60, 70);
+        print(t);*/
        
        /*Triple_pramoug pr(20, 15, 30, 50, 60);
         print(pr);
 
         Triple_ravnobed rb(20, 30, 50, 40);
-        print(rb);
+        print(rb);*/
 
         Triple_ravnostor rs(10);
-        print(rs);*/
+        print(rs);
 
 
 
@@ -65,8 +65,8 @@ int main()
         Paralelogram par(20, 30, 30, 40);
         print(par);*/
 
-        Romb r(30, 35, 150);
-        print(r);
+        /*Romb r(30, 35, 150);
+        print(r);*/
         
     }
     

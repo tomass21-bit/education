@@ -7,7 +7,7 @@ public:
 
     Quad();
     Quad(int a);
-    void show_info() override;
+   
 protected:
     
 };

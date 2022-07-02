@@ -6,13 +6,12 @@ class Triple : public Figura {
 public:
     Triple();
     Triple(int a, int b, int c, int A, int B, int C);
-    void show_info() override;
-  
+    
+    std::string print_info() const override;
 protected:
     Triple(int a, int b, int c, int A, int B, int C, std::string name);
-    void print_sides() override;
-    void print_angles() override;
-    std::string check() ;
+    
+    std::string check()const;
    
 
     int a=0;

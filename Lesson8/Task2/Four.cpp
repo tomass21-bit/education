@@ -5,48 +5,48 @@
 #include  "quad.h"
 #include "Romb.h"
 #include "Exception.h"
+#include <sstream>
 
 
 
 
 
   
-   Four::Four(int a, int b, int c, int d, int A, int B, int C, int D) : Figura(4, "Четырехугольник") {
+   Four::Four(int a, int b, int c, int d, int A, int B, int C, int D) : Figura(4, "Четырехугольник"), a(a),b(b),c(c),d(d),A(A),B(B),C(C),D(D) {
        if ((A + B + C + D) != 360) {
-           throw Bad_figure(Figura::name+ " ( стороны " + std::to_string(a)+", " +std::to_string(b) + ", " +std::to_string(c) + ", "
-               +std::to_string(d) + "; углы " + std::to_string(A) + ", " + std::to_string(B) + ", " + std::to_string(C) + ", " +std::to_string(D)+ ")" + Four::check( ));
+           throw Bad_figure( print_info());
        }
-        this->a = a, this->b = b, this->c = c, this->d = d, this->A = A, this->B = B, this->C = C, this->D = D;
+        
     }
-   void Four::show_info()   {
-        Figura::show_info();
-    }
+   
+      std::string Four::print_info() const {
+       std::stringstream f;
+       f << Figura::print_info();
+       f << "(" << stor << " " << " " << "a=" << a << " " << "b=" << b << " " << "c=" << c << " " << "d=" << d << "; ";
+       f << angle << " " << " " << "A=" << A << " " << "B=" << B << " " << "C=" << C << " " << "D=" << D << ") ";
+       f << Four::check();
+       return f.str();
 
-    void Four::print_sides()  {
 
-        std::cout <<"(" << stor << " " << " " << "a=" << a << " " << "b=" << b << " " << "c=" << c << " " << "d=" << d << "; ";
-    }
-
-
-    void Four::print_angles()  {
-        std::cout << angle << " " << " " << "A=" << A << " " << "B=" << B << " " << "C=" << C << " " << "D=" << D << ") ";
-
-    }
-     std::string Four::check()  {
+   }
+    
+     std::string Four::check() const  {
          if (number_stor == 4 && (A + B + C + D) == 360)
-             return " Создана";
+             return " Создана \n";
+         else if (Figura::number_stor != 4) {
+             return " Не создана. Причина: количество сторон не равно 4 \n";
+         }
          else
-             return  " Не создана. Причина: сумма углов не равна 360 ";
+             return  " Не создана. Причина: сумма углов не равна 360 \n";
 
     }
 
 
-    Four::Four(int a, int b, int A, int B, std::string name) : Figura(4, name) {
+    Four::Four(int a, int b, int A, int B, std::string name) : Figura(4, name), a(a), b(b), c(a), d(b), A(A), B(B), C(A), D(B) {
         if (((A + B)*2 ) != 360) {
-            throw Bad_figure(Figura::name + " ( стороны " + std::to_string(a) + ", " + std::to_string(b) + ", " + std::to_string(a) + ", "
-                + std::to_string(b) + "; углы " + std::to_string(A) + ", " + std::to_string(B) + ", " + std::to_string(A) + ", " + std::to_string(B) + ")" + Four::check() );
+            throw Bad_figure( print_info());
         }
-        this->a = a, this->b = b, this->c = a, this->d = b, this->A = A, this->B = B, this->C = A, this->D = B;
+        
     }
 
    

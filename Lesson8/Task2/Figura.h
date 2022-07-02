@@ -5,7 +5,8 @@
 class Figura {
 public:
 
-    void print();
+    
+   virtual std::string print_info() const ;
 
 
 
@@ -21,11 +22,8 @@ protected:
 
     Figura(int number_stor, std::string name);
 
-    virtual void print_sides();
-    virtual void print_angles();
-    virtual void show_info();
+    
     std::string check();
-    void names();
-   
+    
 
 };

@@ -8,8 +8,8 @@
 class bad_length : public std::exception
 {
 public:
-    bad_length(std::string error): exception(" ") {
-        std::cout << error ;
+    bad_length(std::string error): exception(  error.c_str( )) {
+        
     }
    
 };
@@ -35,24 +35,32 @@ int main()
     std::cout << "Введите запретную длину: ";
     std::cin >> count;
     std::cout << "\n";
-    try {
+    
         do {
             std::cout << "Введите слово: ";
             std::cin >> str;
             std::cout << "\n";
+            try {
             std::cout << "Длина слова " << str << " равна " << function(str, count)<<std::endl;
+            }
+            catch (const bad_length& e) {
+                std::cout << e.what() << std::endl;
+                return 0;
+            }
+
+            catch (...) {
+                std::cout << "Неизвестная ошибка!" << std::endl;
+                return 0;
+            }
+
+
+
+
         } while (function(str, count) != 0);
         return 0;
 
-    }
-    catch (const bad_length& e) {
-        std::cout << e.what() << std::endl;
-
-    }
-   
-    catch (...) {
-        std::cout << "Неизвестная ошибка!" << std::endl;
-    }
+    
+    
 
 
 }

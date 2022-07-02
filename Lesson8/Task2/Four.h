@@ -7,12 +7,11 @@ public:
 
     Four() : Figura(4, "Четырехугольник") { a = 30, b = 35, c = 50, d = 30, A = 30, B = 60, C = 70, D = 90; }
     Four(int a, int b, int c, int d, int A, int B, int C, int D);
-    void show_info() override;
-    void print_sides() override;
+    std::string print_info() const override ;
+    
 
-
-    void print_angles() override;
-    std::string check() ;
+    
+    std::string check() const;
 
 protected:
 
