@@ -48,13 +48,13 @@ int main()
         Triple_ravnobed rb(20, 30, 50, 40);
         print(rb);*/
 
-        Triple_ravnostor rs(10);
-        print(rs);
+       /* Triple_ravnostor rs(10);
+        print(rs);*/
 
 
 
-        /*Four f(10, 20, 30, 40, 50, 60, 70, 80);
-        print(f);*/
+        Four f(10, 20, 30, 40, 120, 60, 120, 60);
+        print(f);
 
         /*Pramoug pra(10, 20);
         print(pra);

@@ -9,7 +9,5 @@ public:
 
     Triple_ravnostor();
     Triple_ravnostor(int a);
-protected:
-    
-    std::string check()const;
+
 };

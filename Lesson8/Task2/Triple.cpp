@@ -11,10 +11,10 @@
     Triple:: Triple() : Figura(3, "Треугольник") { a = 30, b = 35, c = 50, A = 30, B = 60, C = 70; }
     Triple::Triple(int a, int b, int c, int A, int B, int C) : Figura(3, "Треугольник"), a(a), b(b), c(c), A(A), B(B), C(C) {
         if ((A + B + C) != 180) {
-         throw Bad_figure( print_info() + check( ));
+         throw Bad_figure( print_info()  );
         }
         else if (Figura::number_stor != 3) {
-            throw Bad_figure(print_info() + check());
+            throw Bad_figure(print_info() );
         }
     }
     
@@ -23,7 +23,7 @@
         f << Figura::print_info();
         f << "(" << stor << " " << " " << "a=" << a << " " << "b=" << b << " " << "c=" << c <<  "; ";
         f << angle << " " << " " << "A=" << A << " " << "B=" << B << " " << "C=" << C <<  ") ";
-        
+        f << check();
         return f.str();
 
 
@@ -31,10 +31,10 @@
 
     Triple::Triple(int a, int b, int c, int A, int B, int C, std::string name) : Figura(3, name), a(a), b(b), c(c), A(A), B(B), C(C) {
         if ((A + B + C) != 180) {
-            throw Bad_figure( print_info() + check());
+            throw Bad_figure( print_info() );
         }
         else if (Figura::number_stor != 3) {
-            throw Bad_figure(print_info() + check());
+            throw Bad_figure(print_info() );
         }
         
     }
