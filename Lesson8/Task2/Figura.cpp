@@ -17,7 +17,12 @@
          return  f.str();
      }
      Figura::Figura(int number_stor, std::string name) {
-        
+         if (Figura::name == "Фигура" && number_stor != 0) {
+             
+                 throw Bad_figure(print_info()+check());
+             
+
+         }
         
          this->number_stor = number_stor, this->name = name;
     }

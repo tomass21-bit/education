@@ -48,22 +48,22 @@ int main()
         Triple_ravnobed rb(20, 30, 50, 40);
         print(rb);*/
 
-       /* Triple_ravnostor rs(10);
-        print(rs);*/
+        Triple_ravnostor rs(10);
+        print(rs);
 
 
 
-        Four f(10, 20, 30, 40, 120, 60, 120, 60);
+        Four f(10, 20, 30, 40, 120, 50, 120, 60);
         print(f);
 
         /*Pramoug pra(10, 20);
         print(pra);
 
         Quad q(40);
-        print(q);
+        print(q);*/
 
-        Paralelogram par(20, 30, 30, 40);
-        print(par);*/
+        Paralelogram par(20, 30, 100, 80);
+        print(par);
 
         /*Romb r(30, 35, 150);
         print(r);*/

@@ -16,6 +16,30 @@
         else if (Figura::number_stor != 3) {
             throw Bad_figure(print_info() );
         }
+        if (Figura::name == "Прямоугольный треугольник") {
+            if (C != 90) {
+                throw Bad_figure(print_info());
+            }
+
+        }
+
+        else if (Figura::name == "Равнобедренный треугольник")
+            if (a != b) {
+                throw Bad_figure(print_info());
+            }
+            else if (A != C) {
+                throw Bad_figure(print_info());
+            }
+        else if (Figura::name == "Равносторонний треугольник")
+            if (a != b || b != c) {
+                throw Bad_figure(print_info());
+            }
+            else if (A != B || B != C) {
+                throw Bad_figure(print_info());
+            }
+
+        
+    
     }
     
     std::string Triple::print_info() const {
@@ -40,12 +64,34 @@
     }
    
     std::string   Triple::check()const {
+        if (Figura::name == "Прямоугольный треугольник" ) {
+            if ( C!=90) {
+                return   " Не создана. Причина: Угол С не равен 90  \n";
+            }
+            
+        }
+
+        else if (Figura::name == "Равнобедренный треугольник" )
+            if (a != b) {
+                return   " Не создана. Причина: Стороны a и b не равны \n";
+            }
+            else if (A !=C ) {
+                return   " Не создана. Причина: Углы  A и C не равны \n";
+            }
+        else if (Figura::name == "Равносторонний треугольник")
+                if (a != b || b!=c ) {
+                    return   " Не создана. Причина: Стороны не равны \n";
+                }
+                else if (A != B || B!=C ) {
+                    return   " Не создана. Причина: Углы не равны \n";
+                }
+         
         if (number_stor == 3 && (A + B + C) == 180)
             return " Создана \n";
         else if (Figura::number_stor != 3) {
             return " Не создана. Причина: количество сторон не равно 3 \n";
         }
-        else
+        else if ((A + B + C) != 180)
             return  " Не создана. Причина: сумма углов не равна 180 \n";
 
     }
