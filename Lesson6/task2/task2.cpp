@@ -17,22 +17,22 @@ int main()
     std::cout << "Вы хотите указать начальное значение счётчика? Введите да или нет: ";
     std::cin >> vopros;
     std::cout << std::endl;
-    Counter schet;
+    
     if (vopros == "Да" || vopros == "да") {
         std::cout << "Введите начальное значение счётчика: ";
         std::cin >> count;
         std::cout << std::endl;
-        schet.set(count);
+        
     }
     else if (vopros == "Нет" || vopros == "нет") {
-        schet.set(1);
+        count = 1;
     }
     else
     {
         std::cout << "Вы ввели неправильный ответ, досвидания! " << std::endl;
         return 0;
     }
-
+    Counter schet(count);
 
     do {
         std::cout << "Введите команду ('+', '-', '=' или 'x'): ";

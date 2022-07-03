@@ -6,9 +6,10 @@ public:
     void minus();
     void ravno();
     void stop();
-    void set(int count);
+    
     
     Counter();
+    Counter(int count);
 protected:
     int count;
 };

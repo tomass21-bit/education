@@ -4,7 +4,17 @@
 
 
 
-    void Counter:: plus() {
+Counter::Counter() {
+    count = 0;
+
+}
+Counter::Counter(int count) {
+    this->count = count;
+}
+
+
+
+void Counter:: plus() {
         count++;
     }
     void Counter::minus() {
@@ -17,13 +27,6 @@
         std::cout << "До свидания!" << std::endl;
 
     }
-    void Counter:: set(int count) {
-        this->count = count;
-
-    }
-    Counter::Counter() {
-        count = 0;
-
-    }
-
+    
+    
 
