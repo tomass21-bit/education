@@ -3,14 +3,14 @@
 
 #include <iostream>
 #include <clocale>
-#include <algorithm>
+#include <string>
+#include <sstream>
+
 #include<numeric>
 
 class Fraction
 {
-private:
-	int numerator_;
-	int denominator_;
+
 
 public:
 	Fraction(int numerator, int denominator)
@@ -18,14 +18,14 @@ public:
 		numerator_ = numerator;
 		denominator_ = denominator;
 	}
-	int get_n(int numerator) {
+	int get_n( ) const  {
 		return  numerator_;
 	}
-	int get_d(int denominator) {
+	int get_d( ) const  {
 		return  denominator_;
 	}
 	
-	Fraction operator+(const Fraction& s)
+	Fraction operator+(const Fraction& s) 
 	{
 		int numerator = 0;
 		int denominator = 0;
@@ -61,7 +61,7 @@ public:
 	{
 		int numerator = 0;
 		int denominator = 0;
-		
+			
 			numerator = this->numerator_ * s.numerator_ ;
 			denominator = s.denominator_ * this->denominator_;
 
@@ -72,42 +72,38 @@ public:
 	}
 	Fraction operator/(const Fraction& s)
 	{
-		int numerator = 0;
-		int denominator = 0;
+		
 
-		numerator = this->numerator_ * s.denominator_ ;
-		denominator = s.numerator_ * this->denominator_;
-
-		sokrat(numerator, denominator);
-		Fraction div(numerator, denominator);
-		return div;
-}
-	Fraction& operator++()
+		Fraction u( s.denominator_, s.numerator_);
+		return *this * u   ;
+	}
+	Fraction& operator++() 
 	{
-		numerator_ = numerator_ + denominator_;	
-		sokrat(numerator_, denominator_);
-		return *this;
-}
+		Fraction u(1, denominator_);
+		*this = *this + u;
+		return   *this;
+	}
 	Fraction operator++(int)
 	{
 		Fraction temp = *this;
-		++*this;
-		sokrat(numerator_, denominator_);
 
+		++*this;
+		
 		return temp;
 
 	}
 	Fraction& operator--()
 	{
-		numerator_ = numerator_ - denominator_;
-		sokrat(numerator_, denominator_);
+		Fraction u(1, denominator_);
+		*this = *this - u;
+		
 		return *this;
 	}
 	Fraction operator--(int)
 	{
 		Fraction temp = *this;
-		--* this;
-		sokrat(numerator_, denominator_);
+		--*this;
+		
 		return temp;
 
 	}
@@ -117,15 +113,32 @@ public:
 		return *this;
 
 	}
-	protected:
+	friend std::ostream& operator<< (std::ostream& out, const Fraction& p);
+
+
 	
+	protected:
+
 	void sokrat(int& a, int& b) {
 		int x = std::gcd(a, b);
 		a /= x;
 		b /= x;
-		
+
 	}
+private:
+	int numerator_;
+	int denominator_;
 };
+std::ostream& operator<< (std::ostream& out, const Fraction& p)
+{
+
+
+	out << p.get_n() << "/" << p.get_d();
+
+
+	return out;
+
+}
 
 int main()
 {
@@ -150,20 +163,21 @@ int main()
 	Fraction f2(numerator, denominator);
 	Fraction f3(0,0);
 	f3=f1 + f2;
-	std::cout << f1.get_n(numerator) << "/" << f1.get_d(denominator) << " + " << f2.get_n(numerator) << "/" << f2.get_d(denominator) << "= " << f3.get_n(numerator) << "/" << f3.get_d(denominator) << '\n';
+	 std::cout<< f1 << " + " << f2 << "= " << f3 << '\n';
 	f3=f1 - f2;
-	std::cout << f1.get_n(numerator) << "/" << f1.get_d(denominator) << " - " << f2.get_n(numerator) << "/" << f2.get_d(denominator) << "= " << f3.get_n(numerator) << "/" << f3.get_d(denominator) << '\n';
+	std::cout << f1 << " - " << f2 << "= " << f3 << '\n';
 	f3 = f1 * f2;
-	std::cout << f1.get_n(numerator) << "/" << f1.get_d(denominator) << " * " << f2.get_n(numerator) << "/" << f2.get_d(denominator) << "= " << f3.get_n(numerator) << "/" << f3.get_d(denominator) << '\n';
+	std::cout << f1 << " * " << f2 << "= " << f3 << '\n';
 	f3 = f1 / f2;
-	std::cout << f1.get_n(numerator) << "/" << f1.get_d(denominator) << " / " << f2.get_n(numerator) << "/" << f2.get_d(denominator) << "= " << f3.get_n(numerator) << "/" << f3.get_d(denominator) << '\n';
-	f3 = ++f1* f2;
-	std::cout << f1.get_n(numerator) << "/" << f1.get_d(denominator) << " * " << f2.get_n(numerator) << "/" << f2.get_d(denominator) << "= " << f3.get_n(numerator) << "/" << f3.get_d(denominator) << '\n';
-	f3 = f1--* -f2;
-	std::cout << f1.get_n(numerator) << "/" << f1.get_d(denominator) << " * " << f2.get_n(numerator) << "/" << f2.get_d(denominator) << "= " << f3.get_n(numerator) << "/" << f3.get_d(denominator) << '\n';
+	std::cout << f1 << " / " << f2 << "= " << f3 << '\n';
+	f3 = ++f1 * f2;
+	std::cout << f1 << " * " << f2 << "= " << f3 << '\n';
+	f3 = f1-- * -f2;
+	std::cout << f1 << " * " << f2 << "= " << f3 << '\n';
 	
-	f3=-f1 * f2;
-	std::cout << f1.get_n(numerator) << "/" << f1.get_d(denominator) << " * " << f2.get_n(numerator) << "/" << f2.get_d(denominator) << "= " << f3.get_n(numerator) << "/" << f3.get_d(denominator) << '\n';
+	f3=-f1 * f2++;
+	std::cout << f1 << " * " << f2 << "= " << f3 << '\n';
+	std::cout << f2;
 	return 0;
 }
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"

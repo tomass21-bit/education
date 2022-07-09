@@ -3,6 +3,8 @@
 
 #include <iostream>
 
+#include<numeric>
+
 class Fraction
 {
 private:
@@ -12,46 +14,86 @@ private:
 public:
 	Fraction(int numerator, int denominator)
 	{
+		sokrat(numerator, denominator);
 		numerator_ = numerator;
 		denominator_ = denominator;
 	}
 
-	int ABS() const {
-		if (numerator_/ denominator_ < 0) {
-			
-			return (numerator_ / denominator_) * -1;
-		}
-		else
-		return numerator_ / denominator_;
-	}
+	
 	bool operator==(const Fraction& s)
 	{
-		return this->ABS() == s.ABS();
+		
+		if (this->numerator_ == this->denominator_ && s.numerator_ == s.denominator_) {
+			return true;
+	}
+		else if (this->denominator_ == s.denominator_) {
+			if (this->numerator_ == s.numerator_)
+				return true;
+			else if (this->numerator_ != s.numerator_)
+				return false;
+		}
+		else if (this->denominator_ != s.denominator_) {
+			
+
+			return false;
+			 
+		}
+		
 	}
 
 	bool operator!=(const Fraction& s)
-	{
-		return this->ABS() != s.ABS();
+	{	
+		
+		return ((*this == s) ? false : true);
 	}
 
 	bool operator<(const Fraction& s)
 	{
-		return this->ABS() < s.ABS();
+		int nod = std::gcd(this->denominator_, s.denominator_);
+		int nunerator1 = this->numerator_ * (nod / this->denominator_);
+		int nunerator2 = s.numerator_ * (nod / s.denominator_);
+		if ((*this == s) == false) {
+			if (this->denominator_ == s.denominator_) {
+				return this->numerator_ < s.numerator_;
+			}
+
+			else if (this->denominator_ != s.denominator_) {
+				if (this->numerator_ == s.numerator_) {
+					return this->denominator_ > s.denominator_;
+				}
+				else
+
+
+					return nunerator1 < nunerator2;
+
+			}
+			else
+				return false;
+		}
+		
 	}
 
 	bool operator>(const Fraction& s)
 	{
-		return this->ABS() > s.ABS();
+		return ((*this < s) ? false : true);
 	}
 
 	bool operator<=(const Fraction& s)
 	{
-		return this->ABS() <= s.ABS();
+		return (*this == s) || (*this < s);
 	}
 
 	bool operator>=(const Fraction& s)
 	{
-		return this->ABS() >= s.ABS();
+		return ((*this == s) ? false : true)|| ((*this < s) ? false : true);
+	}
+
+
+	void sokrat(int& a, int& b) {
+		int x = std::gcd(a, b);
+		a /= x;
+		b /= x;
+
 	}
 };
 
