@@ -14,7 +14,7 @@ Pramoug::Pramoug(int a, int b) : Paralelogram(a, b, 90, 90, "Прямоугол�
     
 
 
-    Pramoug::Pramoug(int a, std::string name) : Paralelogram(a, a, 85, 95, name) {
+    Pramoug::Pramoug(int a, std::string name) : Paralelogram(a, a, 90, 90, name) {
         check();
     }
 
