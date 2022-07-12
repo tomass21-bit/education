@@ -10,6 +10,8 @@ public:
    
 protected:
     Paralelogram(int a, int b, int A, int B, std::string name);
+    void check() const;
+
 
     
 };

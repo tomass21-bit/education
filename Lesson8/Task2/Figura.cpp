@@ -14,7 +14,7 @@
          std::stringstream f;
          f << name <<" ";
         
-         return  f.str();
+         return  f.str() ;
      }
      Figura::Figura(int number_stor, std::string name) {
          if (Figura::name == "Фигура" && number_stor != 0) {
@@ -28,7 +28,7 @@
     }
     
     
-   std::string Figura::check() {
+   std::string Figura::check()const {
         if (number_stor == 0)
             return " Создана";
         else

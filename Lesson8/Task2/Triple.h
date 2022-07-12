@@ -8,10 +8,11 @@ public:
     Triple(int a, int b, int c, int A, int B, int C);
     
     std::string print_info() const override;
+    
 protected:
     Triple(int a, int b, int c, int A, int B, int C, std::string name);
-    
-    std::string check()const;
+     std::string print_error() const;
+     std::string check()const;
    
 
     int a=0;

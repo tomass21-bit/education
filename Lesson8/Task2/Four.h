@@ -10,13 +10,14 @@ public:
     std::string print_info() const override ;
     
 
-    
-    std::string check() const;
-
 protected:
 
     Four(int a, int b, int A, int B, std::string name);
+    std::string print_error() const;
 
+
+
+    std::string check() const;
     int a=0;
     int b=0;
     int c=0;

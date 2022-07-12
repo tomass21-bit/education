@@ -11,7 +11,7 @@ public:
 
 protected:
     Pramoug(int a, std::string name);
-
+    void check() const;
     
 
 };

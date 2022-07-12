@@ -9,5 +9,5 @@ public:
     Romb(int a, int A, int B);
     
 protected:
-    
+    void check() const;
 };

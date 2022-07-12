@@ -9,5 +9,5 @@ public:
     Quad(int a);
    
 protected:
-    
+    void check() const;
 };

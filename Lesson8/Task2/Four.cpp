@@ -15,10 +15,10 @@
    Four::Four(int a, int b, int c, int d, int A, int B, int C, int D) : Figura(4, "Четырехугольник"), a(a),b(b),c(c),d(d),A(A),B(B),C(C),D(D) {
        
         if (Figura::number_stor != 4) {
-           throw Bad_figure(print_info());
+           throw Bad_figure(print_error()+check());
        }
        else if ((A + B + C + D) != 360) {
-            throw Bad_figure(print_info());
+            throw Bad_figure(print_error()+ check());
        }
            
        
@@ -35,26 +35,23 @@
 
 
    }
+      std::string Four::print_error() const {
+          std::stringstream e;
+          e << Figura::print_info();
+          e << "(" << stor << " " << " " << "a=" << a << " " << "b=" << b << " " << "c=" << c << " " << "d=" << d << "; ";
+          e << angle << " " << " " << "A=" << A << " " << "B=" << B << " " << "C=" << C << " " << "D=" << D << ") ";
+          
+          return e.str();
+
+
+      }
     
      std::string Four::check() const  {
          
          
-         if (Figura::name == "Паралелограм"|| Figura::name == "Ромб") {
-             if (a != c || b != d) {
-                 return   " Не создана. Причина: Стороны попарно не равны \n";
-             }
-             else if   (A != C || B != D) {
-                 return   " Не создана. Причина: Углы попарно не равны \n";
-             }
-         }
+        
          
-         else if(Figura::name=="Прямоугольник" || Figura::name == "Квадрат")
-             if (a != c || b != d) {
-                 return   " Не создана. Причина: Стороны попарно не равны \n";
-             }
-             else if (A!=B || B != C || C==D && A!=90) {
-                 return   " Не создана. Причина: Углы  не равны 90 \n";
-             }
+        
          if (Figura::number_stor == 4 && (A + B + C + D) == 360)
              return  " Создана \n";
          else if (Figura::number_stor != 4) {

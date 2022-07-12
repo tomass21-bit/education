@@ -40,30 +40,30 @@ int main()
     try {
         
         /*Triple t(15, 20, 30, 50, 60, 70);
-        print(t);*/
+       std::cout<< t.print_info();
        
-       /*Triple_pramoug pr(20, 15, 30, 50, 60);
-        print(pr);
+       Triple_pramoug pr(20, 15, 30, 50, 50);
+       print(pr);*/
 
-        Triple_ravnobed rb(20, 30, 50, 40);
+       /* Triple_ravnobed rb(20, 30, 70, 40);
         print(rb);*/
 
-        Triple_ravnostor rs(10);
+        /*Triple_ravnostor rs(10);
         print(rs);
 
 
 
         Four f(10, 20, 30, 40, 120, 50, 120, 60);
-        print(f);
+        print(f);*/
 
-        /*Pramoug pra(10, 20);
+        Pramoug pra(10, 20);
         print(pra);
 
         Quad q(40);
-        print(q);*/
+        print(q);
 
-        Paralelogram par(20, 30, 100, 80);
-        print(par);
+       /* Paralelogram par(20, 30, 100, 80);
+        print(par);*/
 
         /*Romb r(30, 35, 150);
         print(r);*/

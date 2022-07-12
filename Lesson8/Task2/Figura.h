@@ -23,7 +23,7 @@ protected:
     Figura(int number_stor, std::string name);
 
     
-    std::string check();
+     std::string check() const  ;
     
 
 };
