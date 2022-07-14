@@ -19,63 +19,40 @@ public:
 		denominator_ = denominator;
 	}
 
-	
 	bool operator==(const Fraction& s)
 	{
 		
 		if (this->numerator_ == this->denominator_ && s.numerator_ == s.denominator_) {
 			return true;
-	}
-		else if (this->denominator_ == s.denominator_) {
-			if (this->numerator_ == s.numerator_)
-				return true;
-			else if (this->numerator_ != s.numerator_)
-				return false;
 		}
-		else if (this->denominator_ != s.denominator_) {
-			
-
+		else
 			return false;
-			 
-		}
-		
 	}
 
 	bool operator!=(const Fraction& s)
 	{	
 		
-		return ((*this == s) ? false : true);
+	return !(*this==s);
 	}
 
 	bool operator<(const Fraction& s)
 	{
-		int nod = std::gcd(this->denominator_, s.denominator_);
-		int nunerator1 = this->numerator_ * (nod / this->denominator_);
-		int nunerator2 = s.numerator_ * (nod / s.denominator_);
-		if ((*this == s) == false) {
-			if (this->denominator_ == s.denominator_) {
-				return this->numerator_ < s.numerator_;
-			}
-
-			else if (this->denominator_ != s.denominator_) {
-				if (this->numerator_ == s.numerator_) {
-					return this->denominator_ > s.denominator_;
-				}
-				else
-
-
-					return nunerator1 < nunerator2;
-
-			}
-			else
-				return false;
-		}
+		int numerator1 = this->numerator_;
+		int numerator2 = s.numerator_;
+				
+		 numerator1 *= s.denominator_;
+		 numerator2 *=  this->denominator_;
 		
+		 if (*this != s) {
+			 return	 abs(numerator1) < abs(numerator2);
+		 }
+		 else
+			 return false;
 	}
 
 	bool operator>(const Fraction& s)
 	{
-		return ((*this < s) ? false : true);
+		return !(*this < s) ;
 	}
 
 	bool operator<=(const Fraction& s)
@@ -85,7 +62,7 @@ public:
 
 	bool operator>=(const Fraction& s)
 	{
-		return ((*this == s) ? false : true)|| ((*this < s) ? false : true);
+		return !(*this == s) || !(*this < s);
 	}
 
 
@@ -95,13 +72,14 @@ public:
 		b /= x;
 
 	}
+	
 };
 
 int main()
 {
 	Fraction f1(4, 3);
 	Fraction f2(6, -11);
-
+	
 	std::cout << "f1" << ((f1 == f2) ? " == " : " not == ") << "f2" << '\n';
 	std::cout << "f1" << ((f1 != f2) ? " != " : " not != ") << "f2" << '\n';
 	std::cout << "f1" << ((f1 < f2) ? " < " : " not < ") << "f2" << '\n';
