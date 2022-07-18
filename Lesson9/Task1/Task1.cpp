@@ -22,7 +22,7 @@ public:
 	bool operator==(const Fraction& s)
 	{
 		
-		if (this->numerator_ == this->denominator_ && s.numerator_ == s.denominator_) {
+		if (this->numerator_ == s.numerator_ && this->denominator_ == s.denominator_) {
 			return true;
 		}
 		else
@@ -52,17 +52,17 @@ public:
 
 	bool operator>(const Fraction& s)
 	{
-		return !(*this < s) ;
+		return !(*this < s) && !(*this == s);
 	}
 
 	bool operator<=(const Fraction& s)
 	{
-		return (*this == s) || (*this < s);
+		return !(*this > s) ;
 	}
 
 	bool operator>=(const Fraction& s)
 	{
-		return !(*this == s) || !(*this < s);
+		return !(*this < s) ;
 	}
 
 
