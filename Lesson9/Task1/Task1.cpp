@@ -39,12 +39,12 @@ public:
 	{
 		int numerator1 = this->numerator_;
 		int numerator2 = s.numerator_;
-				
+		
 		 numerator1 *= s.denominator_;
-		 numerator2 *=  this->denominator_;
+		 numerator2 *= this->denominator_;
 		
 		 if (*this != s) {
-			 return	 abs(numerator1) < abs(numerator2);
+			 return	 numerator1 < numerator2;
 		 }
 		 else
 			 return false;
@@ -78,7 +78,7 @@ public:
 int main()
 {
 	Fraction f1(4, 3);
-	Fraction f2(6, -11);
+	Fraction f2(6, 11);
 	
 	std::cout << "f1" << ((f1 == f2) ? " == " : " not == ") << "f2" << '\n';
 	std::cout << "f1" << ((f1 != f2) ? " != " : " not != ") << "f2" << '\n';
