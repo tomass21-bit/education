@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #ifdef task2_exports
 #define STR_BYE __declspec(dllexport)
 #else
