@@ -25,25 +25,25 @@ std::variant<int, std::string, std::vector<int>> get_variant() {
 	}
 	return result;
 }
-void print_vector(std::vector <int> vect) {
+void print_vector(const std::vector <int> &vect) {
 	for (int i = 0; i < vect.size(); i++) {
 		std::cout << vect[i] << " ";
 	}
 }
 int main()
 {
-	
+	auto tmp = get_variant();
 	
 	if (std::holds_alternative<int>(get_variant()) == true) {
-		std::cout << std::get<int>(get_variant()) * 2;
+		std::cout << (std::get<int>(tmp)) * 2;
 		
 	}
 	else if (std::holds_alternative<std::string>(get_variant())==true) {
-		std::cout << std::get<std::string>(get_variant());
+		std::cout << (std::get<std::string>(tmp));
 
 	}
 	else if (std::holds_alternative<std::vector<int>>(get_variant()) == true) {
-		print_vector(std::get<std::vector<int>>(get_variant()));
+		print_vector(std::get<std::vector<int>>(tmp));
 	}
 	return 0;
 	/*std::holds_alternative<int>(get_variant()) ? w = std::get<int>(get_variant()) * 2 : std::holds_alternative<std::string>(get_variant()) ?
