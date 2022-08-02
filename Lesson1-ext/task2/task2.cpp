@@ -34,20 +34,19 @@ int main()
 {
 	auto tmp = get_variant();
 	
-	if (std::holds_alternative<int>(get_variant()) == true) {
+	if (std::holds_alternative<int>(tmp) == true) {
 		std::cout << (std::get<int>(tmp)) * 2;
 		
 	}
-	else if (std::holds_alternative<std::string>(get_variant())==true) {
+	else if (std::holds_alternative<std::string>(tmp)==true) {
 		std::cout << (std::get<std::string>(tmp));
 
 	}
-	else if (std::holds_alternative<std::vector<int>>(get_variant()) == true) {
+	else if (std::holds_alternative<std::vector<int>>(tmp) == true) {
 		print_vector(std::get<std::vector<int>>(tmp));
 	}
 	return 0;
-	/*std::holds_alternative<int>(get_variant()) ? w = std::get<int>(get_variant()) * 2 : std::holds_alternative<std::string>(get_variant()) ?
-		w = std::get<std::string>(get_variant()) : std::holds_alternative<std::vector<int>>(get_variant()) ? w = std::get<std::vector<int>>(get_variant()) : w = std::get<int>(get_variant()) * 2;*/
+	
 	
 		 
 
