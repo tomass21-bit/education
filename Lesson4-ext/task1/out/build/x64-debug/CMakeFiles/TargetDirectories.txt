@@ -1,0 +1,10 @@
+D:/GIT/education/Lesson4-ext/task1/out/build/x64-debug/CMakeFiles/task1.dir
+D:/GIT/education/Lesson4-ext/task1/out/build/x64-debug/CMakeFiles/test_task1.dir
+D:/GIT/education/Lesson4-ext/task1/out/build/x64-debug/CMakeFiles/edit_cache.dir
+D:/GIT/education/Lesson4-ext/task1/out/build/x64-debug/CMakeFiles/rebuild_cache.dir
+D:/GIT/education/Lesson4-ext/task1/out/build/x64-debug/Catch2-build/CMakeFiles/edit_cache.dir
+D:/GIT/education/Lesson4-ext/task1/out/build/x64-debug/Catch2-build/CMakeFiles/rebuild_cache.dir
+D:/GIT/education/Lesson4-ext/task1/out/build/x64-debug/Catch2-build/src/CMakeFiles/Catch2.dir
+D:/GIT/education/Lesson4-ext/task1/out/build/x64-debug/Catch2-build/src/CMakeFiles/Catch2WithMain.dir
+D:/GIT/education/Lesson4-ext/task1/out/build/x64-debug/Catch2-build/src/CMakeFiles/edit_cache.dir
+D:/GIT/education/Lesson4-ext/task1/out/build/x64-debug/Catch2-build/src/CMakeFiles/rebuild_cache.dir
