@@ -6,30 +6,68 @@
 #include <cmath>
 
 
+int simple_string_hash(const std::string& string, const int &size) {
+    
+    int ans = 0;
+    for (int i = 0; i < size; ++i)
+    {
+        ans += string[i];
+
+    }
+    return ans;
+
+}
+
+
+
+
 int find_substring_light_rabin_karp(const std::string& string, const std::string& string_find) {
-    int size1 = string.length();
-    int size2 = string_find.length();
+    int size1 = string.length(); //длина строки в которой осуществляется поиск
+    int size2 = string_find.length(); //длина искомой строки
+    int h_f = 0; //хеш искомой строки
+    int h_s = 0; //хеш  строки в которой осуществляется поиск
+    h_f = simple_string_hash(string_find, size2);
+   
     for (int i = 0; i < size1; i++)
     {
+        if (i == 0) {
+        h_s = simple_string_hash(string, size2);
+
+        }
+        else {
+        h_s -= string[i - 1];
+        h_s += string[i + (size2 - 1)];
+        }
+        if (h_f != h_s) {
+        if (i == size1-size2) {
+        return -1;
+        }
+        continue;
+        i++;
+       
+        }
+        else {
         int m = 0;
         for (int j = 0; j < size2; j++)
-        {
-            
-            if (string[i + j] != string_find[j]) {
-                m = 0;
-                break;
-            }
-            else if (string[i + j] == string_find[j]) {
-                m += 1;
-                if (m == size2) {
-                    return i;
-                }
-            }
-            
+        {                
+        if (string[i + j] != string_find[j]) {
+        m = 0;
+        break;
         }
+        else if (string[i + j] == string_find[j]) {
+        m += 1;
+        if (m == size2) {
+        return i;
+        }
+        }
+
+        }
+        
+        }
+        
     }
     
-    return -1;
+    
 
 }
 int main()
