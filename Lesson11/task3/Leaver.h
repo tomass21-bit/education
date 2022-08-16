@@ -1,5 +1,5 @@
 ﻿#pragma once
-#ifdef task2_exports
+#ifdef task3_exports
 #define STR_BYE __declspec(dllexport)
 #else
 #define STR_BYE __declspec(dllimport)

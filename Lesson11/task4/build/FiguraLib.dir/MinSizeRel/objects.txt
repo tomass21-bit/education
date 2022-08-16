@@ -1,0 +1,10 @@
+D:/GIT/education/Lesson11/task4/build/FiguraLib.dir/MinSizeRel/Figura.obj
+D:/GIT/education/Lesson11/task4/build/FiguraLib.dir/MinSizeRel/Four.obj
+D:/GIT/education/Lesson11/task4/build/FiguraLib.dir/MinSizeRel/Paralelogram.obj
+D:/GIT/education/Lesson11/task4/build/FiguraLib.dir/MinSizeRel/Pramoug.obj
+D:/GIT/education/Lesson11/task4/build/FiguraLib.dir/MinSizeRel/quad.obj
+D:/GIT/education/Lesson11/task4/build/FiguraLib.dir/MinSizeRel/Romb.obj
+D:/GIT/education/Lesson11/task4/build/FiguraLib.dir/MinSizeRel/Triple.obj
+D:/GIT/education/Lesson11/task4/build/FiguraLib.dir/MinSizeRel/Triple_pramoug.obj
+D:/GIT/education/Lesson11/task4/build/FiguraLib.dir/MinSizeRel/Triple_ravnobed.obj
+D:/GIT/education/Lesson11/task4/build/FiguraLib.dir/MinSizeRel/Triple_ravnostor.obj

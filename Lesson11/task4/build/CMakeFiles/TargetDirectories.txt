@@ -1,0 +1,4 @@
+D:/GIT/education/Lesson11/task4/build/CMakeFiles/task3.dir
+D:/GIT/education/Lesson11/task4/build/CMakeFiles/FiguraLib.dir
+D:/GIT/education/Lesson11/task4/build/CMakeFiles/ALL_BUILD.dir
+D:/GIT/education/Lesson11/task4/build/CMakeFiles/ZERO_CHECK.dir
