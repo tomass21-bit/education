@@ -1,0 +1,6 @@
+E:/C++/education/Lesson4-ext/task1/build/CMakeFiles/test_task1.dir
+E:/C++/education/Lesson4-ext/task1/build/CMakeFiles/ALL_BUILD.dir
+E:/C++/education/Lesson4-ext/task1/build/CMakeFiles/ZERO_CHECK.dir
+E:/C++/education/Lesson4-ext/task1/build/Catch2-build/CMakeFiles/ALL_BUILD.dir
+E:/C++/education/Lesson4-ext/task1/build/Catch2-build/src/CMakeFiles/Catch2.dir
+E:/C++/education/Lesson4-ext/task1/build/Catch2-build/src/CMakeFiles/Catch2WithMain.dir

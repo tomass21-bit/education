@@ -127,7 +127,37 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Air_race.cpp" />
+    <ClCompile Include="Boots_all.cpp" />
+    <ClCompile Include="Broomstick.cpp" />
+    <ClCompile Include="Camel.cpp" />
+    <ClCompile Include="Centaur.cpp" />
+    <ClCompile Include="Eagle.cpp" />
+    <ClCompile Include="Eath_transport.cpp" />
+    <ClCompile Include="Fast_camel.cpp" />
+    <ClCompile Include="Flying_carpet.cpp" />
+    <ClCompile Include="Fly_transport.cpp" />
+    <ClCompile Include="Ground_race.cpp" />
     <ClCompile Include="kyrs2.cpp" />
+    <ClCompile Include="Mix_race.cpp" />
+    <ClCompile Include="Race.cpp" />
+    <ClCompile Include="Transport.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Air_race.h" />
+    <ClInclude Include="Boots_all.h" />
+    <ClInclude Include="Broomstick.h" />
+    <ClInclude Include="Camel.h" />
+    <ClInclude Include="Centaur.h" />
+    <ClInclude Include="Eagle.h" />
+    <ClInclude Include="Eath_transport.h" />
+    <ClInclude Include="Fast_camel.h" />
+    <ClInclude Include="Flying_carpet.h" />
+    <ClInclude Include="Fly_transport.h" />
+    <ClInclude Include="Ground_race.h" />
+    <ClInclude Include="Mix_race.h" />
+    <ClInclude Include="Race.h" />
+    <ClInclude Include="Transport.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

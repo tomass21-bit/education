@@ -2,9 +2,23 @@
 //
 
 #include <iostream>
+#include "Camel.h"
+#include "Broomstick.h"
+#include <clocale>
+
+
+void print(Transport& fig) {
+     fig.print();
+}
 
 int main()
 {
+    setlocale(LC_ALL, "Russian");
+    Camel cam;
+    Broomstick br(40000);
+
+    print(cam);
+    print(br);
     std::cout << "Hello World!\n";
 }
 
