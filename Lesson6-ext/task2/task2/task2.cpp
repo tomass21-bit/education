@@ -28,7 +28,7 @@ public:
         std::cout << "столбцы: " << cols << std::endl;
     }
     const Table operator[] (int index) const {
-        return arr[index];
+        return ptr [index][index];
     }
      Table operator[] (int index) {
         return arr[index];
