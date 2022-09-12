@@ -2,53 +2,84 @@
 //
 
 #include <iostream>
-#include <vector>
+#include <windows.h>
 
 template <class T>
-class Table
+class Table 
 {
 public:
     Table(const int& x, const int& y) : rows(x), cols(y) {
-        T** arr = new T * [x];
-        for (int i = 0; i < x; i++) {
+         arr = new T* [x];
+        for (int i = 0; i <x; i++) {
             arr[i] = new T[y];
         }
 
     }
     ~Table() {
         for (int i = 0; i < rows; i++) {
-            arr[i] = new T[cols];
+           
             delete[] arr[i];
         }
         delete[] arr;
     }
+    Table(const Table& t) {
+       T** arr1 = new T* [rows];
+        for (int i = 0; i < rows; i++) {
+             arr1[i] = new T[cols];
+        }
+        for (int j = 0; j < rows; j++) {
+            for (int k = 0; k < cols; k++) {
+                arr1[j][k] = t[j][k];
+            }
 
-    void   size() {
-        std::cout << "строки: " << rows << std::endl;
-        std::cout << "столбцы: " << cols << std::endl;
+        }
+        for (int i = 0; i < rows; i++) {
+            
+            delete[] arr[i];
+        }
+        delete[] arr;
+        return arr1;
     }
-    const Table operator[] (int index) const {
-        return ptr [index][index];
-    }
-     Table operator[] (int index) {
+
+    
+      T* operator[] (int index) const {
+
         return arr[index];
     }
-     Table& operator = (const int& value) {
-         
+     T* operator[] (int index) {
+        return arr[index];
+    }
+    
+    
+     Table& operator = (const Table ar) {
+         if (*this == ar)
+             return *this;
+         else
+         *this = ar;
+         return *this;
      }
-
+     void size() const {
+         std::cout << "Строки: " << this->rows << std::endl << "Столбцы: " << this->cols << std::endl;
+    }
 
 
 protected:
     int rows=0;
     int cols=0;
-    T* arr = nullptr;
+    T** arr=nullptr ;
 };
 int main()
 {
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+
     auto test = Table<int>(2, 3);
     test[0][0] = 4;
-    /*std::cout << test[0][0];*/
+    
+    std::cout << test[0][0]<< std::endl;
+    test.size();
+    return 0;
+    
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
