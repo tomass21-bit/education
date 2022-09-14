@@ -8,15 +8,15 @@ class Func
 {
 public:
     
-    Func(int size,const std::vector<int>& t) : count{ 0 }, sum{0} {
- 
-        arr = t;
-        
-    }
-    ~Func() { arr.clear(); }
+    Func() : count{ 0 }, sum{0} { }
+    
    
-    void operator () () {
-        std::for_each(arr.begin(), arr.end(), [&count = count, &sum = sum](int& n) {if ((n % 3) == 0) { count++; sum += n; } });
+    void operator () (int vol) {
+        if ((vol % 3) == 0) {
+            count++;
+            sum += vol;
+        }
+          
      }
     int get_sum() {
         return sum;
@@ -25,18 +25,19 @@ public:
    int  get_count() {
        return count;
     }
-
+  
 protected:
-    std::vector<int> arr;
+    
     int count = 0;
     int sum = 0;
 };
 
 int main()
 {
-    ;
-    Func fu(5, std::vector<int> { 4, 1, 3, 6, 25, 54 });
-    fu();
+   std::vector<int> arr = { 4, 1, 3, 6, 25, 54 };
+    
+    Func fu;
+    fu = std::for_each(arr.begin(), arr.end(), fu);
     
     std::cout << "Summ: " << fu.get_sum() << std::endl << "Count:" << fu.get_count();
     return 0;

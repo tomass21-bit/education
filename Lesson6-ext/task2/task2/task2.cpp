@@ -8,7 +8,7 @@ template <class T>
 class Table 
 {
 public:
-    Table(const int& x, const int& y) : rows(x), cols(y) {
+    Table( int x,  int y) : rows(x), cols(y) {
          arr = new T* [x];
         for (int i = 0; i <x; i++) {
             arr[i] = new T[y];
@@ -23,22 +23,18 @@ public:
         delete[] arr;
     }
     Table(const Table& t) {
-       T** arr1 = new T* [rows];
-        for (int i = 0; i < rows; i++) {
-             arr1[i] = new T[cols];
+       T** arr = new T* [t.rows];
+        for (int i = 0; i < t.rows; i++) {
+             arr[i] = new T[t.cols];
         }
-        for (int j = 0; j < rows; j++) {
-            for (int k = 0; k < cols; k++) {
-                arr1[j][k] = t[j][k];
+        for (int j = 0; j < t.rows; j++) {
+            for (int k = 0; k < t.cols; k++) {
+                arr[j][k] = t.arr[j][k];
             }
 
         }
-        for (int i = 0; i < rows; i++) {
-            
-            delete[] arr[i];
-        }
-        delete[] arr;
-        return arr1;
+       
+        
     }
 
     
@@ -51,11 +47,33 @@ public:
     }
     
     
-     Table& operator = (const Table ar) {
-         if (*this == ar)
+     Table& operator = (const Table& ar) {
+         if (this == &ar) {
              return *this;
+         }
          else
-         *this = ar;
+          if(rows>0 && cols>0)
+              for (int i = 0; i < rows; i++) {
+
+                  delete[] arr[i];
+              }
+         delete[] arr;
+         rows = ar.rows;
+         cols = ar.cols;
+          arr = new T * [rows];
+         for (int i = 0; i < rows; i++) {
+             arr[i] = new T[cols];
+         }
+         for (int j = 0; j < rows; j++) {
+             for (int k = 0; k < cols; k++) {
+                 arr[j][k] = ar.arr[j][k];
+             }
+
+         }
+
+              
+         
+         
          return *this;
      }
      void size() const {
@@ -78,6 +96,12 @@ int main()
     
     std::cout << test[0][0]<< std::endl;
     test.size();
+    
+    auto test2 = Table<int>(2, 3);
+    test2[1][2] = 2;
+
+    test = test2;
+    std::cout << test[1][2];
     return 0;
     
 }
