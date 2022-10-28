@@ -41,7 +41,7 @@ public:
 			return arr[index];
 	}
 	Smart_array operator =(Smart_array& s) {
-		*this = s;
+		
 		return *this;
 		
 	}

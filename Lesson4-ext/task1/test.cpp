@@ -7,10 +7,7 @@
 TEST_CASE("test_list", "[List]") {
 	List des;
 
-	
-	des.PushFront(15);
-
-	CHECK (des.Empty() == 1);
+	CHECK (des.Empty() == true);
 
 }
 
