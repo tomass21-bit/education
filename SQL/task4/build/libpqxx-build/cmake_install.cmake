@@ -1,4 +1,4 @@
-# Install script for directory: D:/GIT/SQL/libpqxx
+# Install script for directory: D:/GIT/education/SQL/libpqxx
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,8 +34,8 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/libpqxx" TYPE FILE FILES
-    "D:/GIT/SQL/libpqxx/cmake/libpqxx-config.cmake"
-    "D:/GIT/SQL/task4/build/libpqxx-build/libpqxx-config-version.cmake"
+    "D:/GIT/education/SQL/libpqxx/cmake/libpqxx-config.cmake"
+    "D:/GIT/education/SQL/task4/build/libpqxx-build/libpqxx-config-version.cmake"
     )
 endif()
 
@@ -43,7 +43,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/libpqxx/libpqxx-targets.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/libpqxx/libpqxx-targets.cmake"
-         "D:/GIT/SQL/task4/build/libpqxx-build/CMakeFiles/Export/lib/cmake/libpqxx/libpqxx-targets.cmake")
+         "D:/GIT/education/SQL/task4/build/libpqxx-build/CMakeFiles/Export/lib/cmake/libpqxx/libpqxx-targets.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/libpqxx/libpqxx-targets-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -52,26 +52,26 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/libpqxx" TYPE FILE FILES "D:/GIT/SQL/task4/build/libpqxx-build/CMakeFiles/Export/lib/cmake/libpqxx/libpqxx-targets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/libpqxx" TYPE FILE FILES "D:/GIT/education/SQL/task4/build/libpqxx-build/CMakeFiles/Export/lib/cmake/libpqxx/libpqxx-targets.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/libpqxx" TYPE FILE FILES "D:/GIT/SQL/task4/build/libpqxx-build/CMakeFiles/Export/lib/cmake/libpqxx/libpqxx-targets-debug.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/libpqxx" TYPE FILE FILES "D:/GIT/education/SQL/task4/build/libpqxx-build/CMakeFiles/Export/lib/cmake/libpqxx/libpqxx-targets-debug.cmake")
   endif()
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/libpqxx" TYPE FILE FILES "D:/GIT/SQL/task4/build/libpqxx-build/CMakeFiles/Export/lib/cmake/libpqxx/libpqxx-targets-minsizerel.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/libpqxx" TYPE FILE FILES "D:/GIT/education/SQL/task4/build/libpqxx-build/CMakeFiles/Export/lib/cmake/libpqxx/libpqxx-targets-minsizerel.cmake")
   endif()
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/libpqxx" TYPE FILE FILES "D:/GIT/SQL/task4/build/libpqxx-build/CMakeFiles/Export/lib/cmake/libpqxx/libpqxx-targets-relwithdebinfo.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/libpqxx" TYPE FILE FILES "D:/GIT/education/SQL/task4/build/libpqxx-build/CMakeFiles/Export/lib/cmake/libpqxx/libpqxx-targets-relwithdebinfo.cmake")
   endif()
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/libpqxx" TYPE FILE FILES "D:/GIT/SQL/task4/build/libpqxx-build/CMakeFiles/Export/lib/cmake/libpqxx/libpqxx-targets-release.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/libpqxx" TYPE FILE FILES "D:/GIT/education/SQL/task4/build/libpqxx-build/CMakeFiles/Export/lib/cmake/libpqxx/libpqxx-targets-release.cmake")
   endif()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("D:/GIT/SQL/task4/build/libpqxx-build/src/cmake_install.cmake")
-  include("D:/GIT/SQL/task4/build/libpqxx-build/include/cmake_install.cmake")
-  include("D:/GIT/SQL/task4/build/libpqxx-build/test/cmake_install.cmake")
+  include("D:/GIT/education/SQL/task4/build/libpqxx-build/src/cmake_install.cmake")
+  include("D:/GIT/education/SQL/task4/build/libpqxx-build/include/cmake_install.cmake")
+  include("D:/GIT/education/SQL/task4/build/libpqxx-build/test/cmake_install.cmake")
 
 endif()
 

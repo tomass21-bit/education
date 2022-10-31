@@ -20,25 +20,25 @@ C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtens
 C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.23/Modules/SelectLibraryConfigurations.cmake
 C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.23/Modules/WriteBasicConfigVersionFile.cmake
 C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.23/Templates/CPackConfig.cmake.in
-D:/GIT/SQL/libpqxx/CMakeLists.txt
-D:/GIT/SQL/libpqxx/cmake/config.cmake
-D:/GIT/SQL/libpqxx/cmake/libpqxx-config.cmake
-D:/GIT/SQL/libpqxx/config-tests/charconv_float.cxx
-D:/GIT/SQL/libpqxx/config-tests/charconv_int.cxx
-D:/GIT/SQL/libpqxx/config-tests/cmp.cxx
-D:/GIT/SQL/libpqxx/config-tests/concepts.cxx
-D:/GIT/SQL/libpqxx/config-tests/cxa_demangle.cxx
-D:/GIT/SQL/libpqxx/config-tests/fs.cxx
-D:/GIT/SQL/libpqxx/config-tests/gcc_pure.cxx
-D:/GIT/SQL/libpqxx/config-tests/gcc_visibility.cxx
-D:/GIT/SQL/libpqxx/config-tests/likely.cxx
-D:/GIT/SQL/libpqxx/config-tests/multidim-subscript.cxx
-D:/GIT/SQL/libpqxx/config-tests/need_fslib.cxx
-D:/GIT/SQL/libpqxx/config-tests/sleep_for.cxx
-D:/GIT/SQL/libpqxx/config-tests/span.cxx
-D:/GIT/SQL/libpqxx/config-tests/strerror_r.cxx
-D:/GIT/SQL/libpqxx/config-tests/strerror_s.cxx
-D:/GIT/SQL/libpqxx/config-tests/thread_local.cxx
-D:/GIT/SQL/libpqxx/config-tests/unreachable.cxx
-D:/GIT/SQL/libpqxx/config-tests/year_month_day.cxx
-D:/GIT/SQL/task4/build/libpqxx-build/include/pqxx/config_cmake.h.in
+D:/GIT/education/SQL/libpqxx/CMakeLists.txt
+D:/GIT/education/SQL/libpqxx/cmake/config.cmake
+D:/GIT/education/SQL/libpqxx/cmake/libpqxx-config.cmake
+D:/GIT/education/SQL/libpqxx/config-tests/charconv_float.cxx
+D:/GIT/education/SQL/libpqxx/config-tests/charconv_int.cxx
+D:/GIT/education/SQL/libpqxx/config-tests/cmp.cxx
+D:/GIT/education/SQL/libpqxx/config-tests/concepts.cxx
+D:/GIT/education/SQL/libpqxx/config-tests/cxa_demangle.cxx
+D:/GIT/education/SQL/libpqxx/config-tests/fs.cxx
+D:/GIT/education/SQL/libpqxx/config-tests/gcc_pure.cxx
+D:/GIT/education/SQL/libpqxx/config-tests/gcc_visibility.cxx
+D:/GIT/education/SQL/libpqxx/config-tests/likely.cxx
+D:/GIT/education/SQL/libpqxx/config-tests/multidim-subscript.cxx
+D:/GIT/education/SQL/libpqxx/config-tests/need_fslib.cxx
+D:/GIT/education/SQL/libpqxx/config-tests/sleep_for.cxx
+D:/GIT/education/SQL/libpqxx/config-tests/span.cxx
+D:/GIT/education/SQL/libpqxx/config-tests/strerror_r.cxx
+D:/GIT/education/SQL/libpqxx/config-tests/strerror_s.cxx
+D:/GIT/education/SQL/libpqxx/config-tests/thread_local.cxx
+D:/GIT/education/SQL/libpqxx/config-tests/unreachable.cxx
+D:/GIT/education/SQL/libpqxx/config-tests/year_month_day.cxx
+D:/GIT/education/SQL/task4/build/libpqxx-build/include/pqxx/config_cmake.h.in

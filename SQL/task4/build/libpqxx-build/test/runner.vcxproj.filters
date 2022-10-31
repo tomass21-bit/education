@@ -1,268 +1,268 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\runner.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\runner.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test00.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test00.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test01.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test01.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test02.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test02.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test04.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test04.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test07.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test07.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test10.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test10.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test11.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test11.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test13.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test13.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test14.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test14.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test16.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test16.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test17.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test17.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test18.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test18.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test20.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test20.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test21.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test21.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test26.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test26.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test29.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test29.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test30.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test30.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test32.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test32.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test37.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test37.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test39.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test39.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test46.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test46.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test56.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test56.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test60.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test60.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test61.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test61.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test62.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test62.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test69.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test69.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test70.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test70.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test71.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test71.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test72.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test72.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test74.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test74.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test75.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test75.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test76.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test76.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test77.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test77.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test78.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test78.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test79.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test79.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test82.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test82.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test84.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test84.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test87.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test87.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test88.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test88.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test89.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test89.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test90.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test90.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_array.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_array.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_binarystring.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_binarystring.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_blob.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_blob.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_cancel_query.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_cancel_query.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_column.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_column.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_composite.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_composite.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_connection.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_connection.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_cursor.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_cursor.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_encodings.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_encodings.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_error_verbosity.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_error_verbosity.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_errorhandler.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_errorhandler.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_escape.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_escape.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_exceptions.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_exceptions.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_field.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_field.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_float.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_float.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_largeobject.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_largeobject.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_nonblocking_connect.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_nonblocking_connect.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_notification.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_notification.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_pipeline.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_pipeline.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_prepared_statement.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_prepared_statement.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_range.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_range.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_read_transaction.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_read_transaction.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_result_iteration.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_result_iteration.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_result_slicing.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_result_slicing.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_row.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_row.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_separated_list.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_separated_list.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_simultaneous_transactions.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_simultaneous_transactions.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_sql_cursor.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_sql_cursor.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_stateless_cursor.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_stateless_cursor.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_strconv.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_strconv.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_stream_from.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_stream_from.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_stream_to.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_stream_to.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_string_conversion.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_string_conversion.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_subtransaction.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_subtransaction.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_test_helpers.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_test_helpers.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_thread_safety_model.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_thread_safety_model.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_time.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_time.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_transaction.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_transaction.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_transaction_base.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_transaction_base.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_transaction_focus.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_transaction_focus.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_transactor.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_transactor.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_type_name.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_type_name.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_zview.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_zview.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\GIT\SQL\libpqxx\test\CMakeLists.txt" />
+    <CustomBuild Include="D:\GIT\education\SQL\libpqxx\test\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{2695CEEF-3743-31B9-896D-627DE3AB60B6}</UniqueIdentifier>
+      <UniqueIdentifier>{73CC4449-5DA8-39B5-9861-D40A7277A952}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

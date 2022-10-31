@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{BB15AD40-7C5C-3F7D-B2D3-DF4AF8D4A6CD}</ProjectGuid>
+    <ProjectGuid>{3D286D16-AD44-3355-847E-A57E2357E906}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -59,25 +59,25 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\GIT\SQL\task4\build\libpqxx-build\test\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\GIT\education\SQL\task4\build\libpqxx-build\test\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">runner.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">runner</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\GIT\SQL\task4\build\libpqxx-build\test\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\GIT\education\SQL\task4\build\libpqxx-build\test\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">runner.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">runner</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\GIT\SQL\task4\build\libpqxx-build\test\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\GIT\education\SQL\task4\build\libpqxx-build\test\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">runner.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">runner</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\GIT\SQL\task4\build\libpqxx-build\test\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\GIT\education\SQL\task4\build\libpqxx-build\test\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">runner.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">runner</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
@@ -86,7 +86,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Program Files\PostgreSQL\14\include;C:\Program Files\PostgreSQL\14\include\server;D:\GIT\SQL\task4\build\libpqxx-build\include;D:\GIT\SQL\libpqxx\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Program Files\PostgreSQL\14\include;C:\Program Files\PostgreSQL\14\include\server;D:\GIT\education\SQL\task4\build\libpqxx-build\include;D:\GIT\education\SQL\libpqxx\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -104,10 +104,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Program Files\PostgreSQL\14\include;C:\Program Files\PostgreSQL\14\include\server;D:\GIT\SQL\task4\build\libpqxx-build\include;D:\GIT\SQL\libpqxx\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Program Files\PostgreSQL\14\include;C:\Program Files\PostgreSQL\14\include\server;D:\GIT\education\SQL\task4\build\libpqxx-build\include;D:\GIT\education\SQL\libpqxx\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Program Files\PostgreSQL\14\include;C:\Program Files\PostgreSQL\14\include\server;D:\GIT\SQL\task4\build\libpqxx-build\include;D:\GIT\SQL\libpqxx\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Program Files\PostgreSQL\14\include;C:\Program Files\PostgreSQL\14\include\server;D:\GIT\education\SQL\task4\build\libpqxx-build\include;D:\GIT\education\SQL\libpqxx\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -120,8 +120,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>D:/GIT/SQL/task4/build/libpqxx-build/test/Debug/runner.lib</ImportLibrary>
-      <ProgramDataBaseFile>D:/GIT/SQL/task4/build/libpqxx-build/test/Debug/runner.pdb</ProgramDataBaseFile>
+      <ImportLibrary>D:/GIT/education/SQL/task4/build/libpqxx-build/test/Debug/runner.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/GIT/education/SQL/task4/build/libpqxx-build/test/Debug/runner.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -130,7 +130,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Program Files\PostgreSQL\14\include;C:\Program Files\PostgreSQL\14\include\server;D:\GIT\SQL\task4\build\libpqxx-build\include;D:\GIT\SQL\libpqxx\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Program Files\PostgreSQL\14\include;C:\Program Files\PostgreSQL\14\include\server;D:\GIT\education\SQL\task4\build\libpqxx-build\include;D:\GIT\education\SQL\libpqxx\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
@@ -148,10 +148,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Program Files\PostgreSQL\14\include;C:\Program Files\PostgreSQL\14\include\server;D:\GIT\SQL\task4\build\libpqxx-build\include;D:\GIT\SQL\libpqxx\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Program Files\PostgreSQL\14\include;C:\Program Files\PostgreSQL\14\include\server;D:\GIT\education\SQL\task4\build\libpqxx-build\include;D:\GIT\education\SQL\libpqxx\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Program Files\PostgreSQL\14\include;C:\Program Files\PostgreSQL\14\include\server;D:\GIT\SQL\task4\build\libpqxx-build\include;D:\GIT\SQL\libpqxx\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Program Files\PostgreSQL\14\include;C:\Program Files\PostgreSQL\14\include\server;D:\GIT\education\SQL\task4\build\libpqxx-build\include;D:\GIT\education\SQL\libpqxx\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -164,8 +164,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>D:/GIT/SQL/task4/build/libpqxx-build/test/Release/runner.lib</ImportLibrary>
-      <ProgramDataBaseFile>D:/GIT/SQL/task4/build/libpqxx-build/test/Release/runner.pdb</ProgramDataBaseFile>
+      <ImportLibrary>D:/GIT/education/SQL/task4/build/libpqxx-build/test/Release/runner.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/GIT/education/SQL/task4/build/libpqxx-build/test/Release/runner.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -174,7 +174,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Program Files\PostgreSQL\14\include;C:\Program Files\PostgreSQL\14\include\server;D:\GIT\SQL\task4\build\libpqxx-build\include;D:\GIT\SQL\libpqxx\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Program Files\PostgreSQL\14\include;C:\Program Files\PostgreSQL\14\include\server;D:\GIT\education\SQL\task4\build\libpqxx-build\include;D:\GIT\education\SQL\libpqxx\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
@@ -192,10 +192,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Program Files\PostgreSQL\14\include;C:\Program Files\PostgreSQL\14\include\server;D:\GIT\SQL\task4\build\libpqxx-build\include;D:\GIT\SQL\libpqxx\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Program Files\PostgreSQL\14\include;C:\Program Files\PostgreSQL\14\include\server;D:\GIT\education\SQL\task4\build\libpqxx-build\include;D:\GIT\education\SQL\libpqxx\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Program Files\PostgreSQL\14\include;C:\Program Files\PostgreSQL\14\include\server;D:\GIT\SQL\task4\build\libpqxx-build\include;D:\GIT\SQL\libpqxx\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Program Files\PostgreSQL\14\include;C:\Program Files\PostgreSQL\14\include\server;D:\GIT\education\SQL\task4\build\libpqxx-build\include;D:\GIT\education\SQL\libpqxx\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -208,8 +208,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>D:/GIT/SQL/task4/build/libpqxx-build/test/MinSizeRel/runner.lib</ImportLibrary>
-      <ProgramDataBaseFile>D:/GIT/SQL/task4/build/libpqxx-build/test/MinSizeRel/runner.pdb</ProgramDataBaseFile>
+      <ImportLibrary>D:/GIT/education/SQL/task4/build/libpqxx-build/test/MinSizeRel/runner.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/GIT/education/SQL/task4/build/libpqxx-build/test/MinSizeRel/runner.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -218,7 +218,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Program Files\PostgreSQL\14\include;C:\Program Files\PostgreSQL\14\include\server;D:\GIT\SQL\task4\build\libpqxx-build\include;D:\GIT\SQL\libpqxx\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Program Files\PostgreSQL\14\include;C:\Program Files\PostgreSQL\14\include\server;D:\GIT\education\SQL\task4\build\libpqxx-build\include;D:\GIT\education\SQL\libpqxx\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -235,10 +235,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Program Files\PostgreSQL\14\include;C:\Program Files\PostgreSQL\14\include\server;D:\GIT\SQL\task4\build\libpqxx-build\include;D:\GIT\SQL\libpqxx\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Program Files\PostgreSQL\14\include;C:\Program Files\PostgreSQL\14\include\server;D:\GIT\education\SQL\task4\build\libpqxx-build\include;D:\GIT\education\SQL\libpqxx\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Program Files\PostgreSQL\14\include;C:\Program Files\PostgreSQL\14\include\server;D:\GIT\SQL\task4\build\libpqxx-build\include;D:\GIT\SQL\libpqxx\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Program Files\PostgreSQL\14\include;C:\Program Files\PostgreSQL\14\include\server;D:\GIT\education\SQL\task4\build\libpqxx-build\include;D:\GIT\education\SQL\libpqxx\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -251,8 +251,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>D:/GIT/SQL/task4/build/libpqxx-build/test/RelWithDebInfo/runner.lib</ImportLibrary>
-      <ProgramDataBaseFile>D:/GIT/SQL/task4/build/libpqxx-build/test/RelWithDebInfo/runner.pdb</ProgramDataBaseFile>
+      <ImportLibrary>D:/GIT/education/SQL/task4/build/libpqxx-build/test/RelWithDebInfo/runner.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/GIT/education/SQL/task4/build/libpqxx-build/test/RelWithDebInfo/runner.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -260,11 +260,11 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\GIT\SQL\libpqxx\test\CMakeLists.txt">
+    <CustomBuild Include="D:\GIT\education\SQL\libpqxx\test\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/GIT/SQL/libpqxx/test/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/GIT/education/SQL/libpqxx/test/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/GIT/SQL/task4 -BD:/GIT/SQL/task4/build --check-stamp-file D:/GIT/SQL/task4/build/libpqxx-build/test/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/GIT/education/SQL/task4 -BD:/GIT/education/SQL/task4/build --check-stamp-file D:/GIT/education/SQL/task4/build/libpqxx-build/test/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -273,11 +273,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\GIT\SQL\task4\build\libpqxx-build\test\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\GIT\education\SQL\task4\build\libpqxx-build\test\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/GIT/SQL/libpqxx/test/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/GIT/education/SQL/libpqxx/test/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/GIT/SQL/task4 -BD:/GIT/SQL/task4/build --check-stamp-file D:/GIT/SQL/task4/build/libpqxx-build/test/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/GIT/education/SQL/task4 -BD:/GIT/education/SQL/task4/build --check-stamp-file D:/GIT/education/SQL/task4/build/libpqxx-build/test/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -286,11 +286,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\GIT\SQL\task4\build\libpqxx-build\test\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\GIT\education\SQL\task4\build\libpqxx-build\test\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/GIT/SQL/libpqxx/test/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/GIT/education/SQL/libpqxx/test/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/GIT/SQL/task4 -BD:/GIT/SQL/task4/build --check-stamp-file D:/GIT/SQL/task4/build/libpqxx-build/test/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/GIT/education/SQL/task4 -BD:/GIT/education/SQL/task4/build --check-stamp-file D:/GIT/education/SQL/task4/build/libpqxx-build/test/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -299,11 +299,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\GIT\SQL\task4\build\libpqxx-build\test\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\GIT\education\SQL\task4\build\libpqxx-build\test\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/GIT/SQL/libpqxx/test/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/GIT/education/SQL/libpqxx/test/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/GIT/SQL/task4 -BD:/GIT/SQL/task4/build --check-stamp-file D:/GIT/SQL/task4/build/libpqxx-build/test/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/GIT/education/SQL/task4 -BD:/GIT/education/SQL/task4/build --check-stamp-file D:/GIT/education/SQL/task4/build/libpqxx-build/test/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -312,106 +312,106 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\GIT\SQL\task4\build\libpqxx-build\test\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\GIT\education\SQL\task4\build\libpqxx-build\test\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\runner.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test00.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test01.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test02.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test04.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test07.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test10.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test11.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test13.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test14.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test16.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test17.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test18.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test20.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test21.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test26.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test29.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test30.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test32.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test37.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test39.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test46.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test56.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test60.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test61.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test62.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test69.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test70.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test71.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test72.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test74.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test75.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test76.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test77.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test78.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test79.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test82.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test84.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test87.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test88.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test89.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\test90.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_array.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_binarystring.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_blob.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_cancel_query.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_column.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_composite.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_connection.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_cursor.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_encodings.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_error_verbosity.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_errorhandler.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_escape.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_exceptions.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_field.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_float.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_largeobject.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_nonblocking_connect.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_notification.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_pipeline.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_prepared_statement.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_range.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_read_transaction.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_result_iteration.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_result_slicing.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_row.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_separated_list.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_simultaneous_transactions.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_sql_cursor.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_stateless_cursor.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_strconv.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_stream_from.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_stream_to.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_string_conversion.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_subtransaction.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_test_helpers.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_thread_safety_model.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_time.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_transaction.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_transaction_base.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_transaction_focus.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_transactor.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_type_name.cxx" />
-    <ClCompile Include="D:\GIT\SQL\libpqxx\test\unit\test_zview.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\runner.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test00.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test01.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test02.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test04.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test07.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test10.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test11.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test13.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test14.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test16.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test17.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test18.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test20.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test21.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test26.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test29.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test30.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test32.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test37.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test39.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test46.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test56.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test60.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test61.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test62.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test69.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test70.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test71.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test72.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test74.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test75.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test76.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test77.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test78.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test79.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test82.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test84.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test87.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test88.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test89.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\test90.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_array.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_binarystring.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_blob.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_cancel_query.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_column.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_composite.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_connection.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_cursor.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_encodings.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_error_verbosity.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_errorhandler.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_escape.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_exceptions.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_field.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_float.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_largeobject.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_nonblocking_connect.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_notification.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_pipeline.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_prepared_statement.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_range.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_read_transaction.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_result_iteration.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_result_slicing.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_row.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_separated_list.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_simultaneous_transactions.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_sql_cursor.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_stateless_cursor.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_strconv.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_stream_from.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_stream_to.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_string_conversion.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_subtransaction.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_test_helpers.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_thread_safety_model.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_time.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_transaction.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_transaction_base.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_transaction_focus.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_transactor.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_type_name.cxx" />
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\test\unit\test_zview.cxx" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="D:\GIT\SQL\task4\build\ZERO_CHECK.vcxproj">
-      <Project>{6ECFABFB-150E-30B9-871F-5EF76E997F8D}</Project>
+    <ProjectReference Include="D:\GIT\education\SQL\task4\build\ZERO_CHECK.vcxproj">
+      <Project>{1DC3EAD5-6587-3BB3-A54C-2B9785C4D395}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="D:\GIT\SQL\task4\build\libpqxx-build\src\pqxx.vcxproj">
-      <Project>{BA75C106-45B5-316B-8235-BA042D9EC97A}</Project>
+    <ProjectReference Include="D:\GIT\education\SQL\task4\build\libpqxx-build\src\pqxx.vcxproj">
+      <Project>{81230713-6BCA-3CE2-96F1-757FCEC5D528}</Project>
       <Name>pqxx</Name>
     </ProjectReference>
   </ItemGroup>

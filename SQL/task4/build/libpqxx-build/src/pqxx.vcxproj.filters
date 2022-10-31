@@ -1,94 +1,94 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\src\array.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\src\array.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\src\binarystring.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\src\binarystring.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\src\blob.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\src\blob.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\src\connection.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\src\connection.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\src\cursor.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\src\cursor.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\src\encodings.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\src\encodings.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\src\errorhandler.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\src\errorhandler.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\src\except.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\src\except.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\src\field.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\src\field.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\src\largeobject.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\src\largeobject.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\src\notification.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\src\notification.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\src\params.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\src\params.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\src\pipeline.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\src\pipeline.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\src\result.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\src\result.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\src\robusttransaction.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\src\robusttransaction.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\src\row.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\src\row.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\src\sql_cursor.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\src\sql_cursor.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\src\strconv.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\src\strconv.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\src\stream_from.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\src\stream_from.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\src\stream_to.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\src\stream_to.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\src\subtransaction.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\src\subtransaction.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\src\time.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\src\time.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\src\transaction.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\src\transaction.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\src\transaction_base.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\src\transaction_base.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\src\util.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\src\util.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\src\version.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\src\version.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\GIT\SQL\libpqxx\src\wait.cxx">
+    <ClCompile Include="D:\GIT\education\SQL\libpqxx\src\wait.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\GIT\SQL\libpqxx\src\CMakeLists.txt" />
+    <CustomBuild Include="D:\GIT\education\SQL\libpqxx\src\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{2695CEEF-3743-31B9-896D-627DE3AB60B6}</UniqueIdentifier>
+      <UniqueIdentifier>{73CC4449-5DA8-39B5-9861-D40A7277A952}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

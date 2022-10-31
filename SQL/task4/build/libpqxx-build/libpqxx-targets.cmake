@@ -45,7 +45,7 @@ unset(_expectedTargets)
 add_library(libpqxx::pqxx STATIC IMPORTED)
 
 set_target_properties(libpqxx::pqxx PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "D:/GIT/SQL/task4/build/libpqxx-build/include;D:/GIT/SQL/libpqxx/include"
+  INTERFACE_INCLUDE_DIRECTORIES "D:/GIT/education/SQL/task4/build/libpqxx-build/include;D:/GIT/education/SQL/libpqxx/include"
   INTERFACE_LINK_LIBRARIES "C:/Program Files/PostgreSQL/14/lib/libpq.lib;wsock32;ws2_32"
 )
 
@@ -53,28 +53,28 @@ set_target_properties(libpqxx::pqxx PROPERTIES
 set_property(TARGET libpqxx::pqxx APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(libpqxx::pqxx PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "D:/GIT/SQL/task4/build/libpqxx-build/src/Debug/pqxx.lib"
+  IMPORTED_LOCATION_DEBUG "D:/GIT/education/SQL/task4/build/libpqxx-build/src/Debug/pqxx.lib"
   )
 
 # Import target "libpqxx::pqxx" for configuration "Release"
 set_property(TARGET libpqxx::pqxx APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(libpqxx::pqxx PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "D:/GIT/SQL/task4/build/libpqxx-build/src/Release/pqxx.lib"
+  IMPORTED_LOCATION_RELEASE "D:/GIT/education/SQL/task4/build/libpqxx-build/src/Release/pqxx.lib"
   )
 
 # Import target "libpqxx::pqxx" for configuration "MinSizeRel"
 set_property(TARGET libpqxx::pqxx APPEND PROPERTY IMPORTED_CONFIGURATIONS MINSIZEREL)
 set_target_properties(libpqxx::pqxx PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_MINSIZEREL "CXX"
-  IMPORTED_LOCATION_MINSIZEREL "D:/GIT/SQL/task4/build/libpqxx-build/src/MinSizeRel/pqxx.lib"
+  IMPORTED_LOCATION_MINSIZEREL "D:/GIT/education/SQL/task4/build/libpqxx-build/src/MinSizeRel/pqxx.lib"
   )
 
 # Import target "libpqxx::pqxx" for configuration "RelWithDebInfo"
 set_property(TARGET libpqxx::pqxx APPEND PROPERTY IMPORTED_CONFIGURATIONS RELWITHDEBINFO)
 set_target_properties(libpqxx::pqxx PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELWITHDEBINFO "CXX"
-  IMPORTED_LOCATION_RELWITHDEBINFO "D:/GIT/SQL/task4/build/libpqxx-build/src/RelWithDebInfo/pqxx.lib"
+  IMPORTED_LOCATION_RELWITHDEBINFO "D:/GIT/education/SQL/task4/build/libpqxx-build/src/RelWithDebInfo/pqxx.lib"
   )
 
 # This file does not depend on other imported targets which have
