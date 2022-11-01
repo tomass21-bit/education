@@ -6,17 +6,10 @@ cmake_minimum_required (VERSION 3.8)
 project ("task1")
 
 # Добавьте источник в исполняемый файл этого проекта.
-<<<<<<< HEAD
-add_executable (task1 "task1.cpp" "task1.h")
-add_subdirectory(D:/GIT/education/Lesson4-ext/Catch2 Catch2-build)
-add_executable (test_task1 "test.cpp" )
-target_link_libraries(test_task1 PRIVATE Catch2::Catch2)
-=======
 add_executable (test_task1 "test.cpp" "task1.cpp" "task1.h")
 set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
 add_subdirectory(E:/C++/education/Catch2 Catch2-build)
 
 target_link_libraries(test_task1 PRIVATE Catch2::Catch2 )
 
->>>>>>> a3107273d8365e6ddef67c88fca41908136ecc4f
 # TODO: Добавьте тесты и целевые объекты, если это необходимо.
