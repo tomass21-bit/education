@@ -5,8 +5,11 @@
 #include <thread>
 #include <mutex>
 #include <windows.h>
+#include < string_view >
 class Myt {
 public:
+	Myt(std::string len_in):len(len_in) {};
+	~Myt() { len.clear(); }
 	std::mutex m;
 	std::string len;
 };
@@ -18,22 +21,30 @@ public:
 
 
 void swap_lock(Myt& l,Myt&  r) noexcept {
-	std::mutex m3;
-	std::lock(m3,l.m);
 	
-	m3 = move(l.m);
-
- 
+	std::lock (l.m,r.m);
+	
+	
+	swap(l.len,r.len);
+	
+	l.m.unlock();
+	r.m.unlock();
+	std::cout << "swap_lock" << std::endl;
 }
 
-void swap_scoped_lock(std::mutex l, std::mutex r) noexcept {
-	std::scoped_lock lock(l, r);
-	swap(l, r);
-
+void swap_scoped_lock(Myt& l, Myt& r) noexcept {
+	std::scoped_lock lock1(l.m,r.m);
+	
+	swap(l.len,r.len);
+	std::cout << "swap_scoped_lock" << std::endl;
 }
 
-void swap_unique_lock(std::mutex l, std::mutex r) noexcept {
-
+void swap_unique_lock(Myt& l, Myt& r) noexcept {
+	std::unique_lock lock1(l.m, std::defer_lock);
+	std::unique_lock lock2(r.m, std::defer_lock);
+	std::lock(lock1, lock2);
+	swap(lock1, lock2);
+	std::cout << "swap_unique_lock" << std::endl;
 }
 
 
@@ -42,9 +53,14 @@ void swap_unique_lock(std::mutex l, std::mutex r) noexcept {
 int main()
 {
 	setlocale(LC_ALL, "Rus");
-	Myt left;
-	Myt right;
-	swap_lock(left, right);
+	Myt left("left");
+	Myt right("right");
+	std::thread t1 (swap_lock, std::ref(left), std::ref (right));
+	std::thread t2(swap_scoped_lock, std::ref(left), std::ref (right));
+	std::thread t3(swap_unique_lock, std::ref(left), std::ref (right));
+	t1.join();
+	t2.join();
+	t3.join();
 	return 0;
 }
 
