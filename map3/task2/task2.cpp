@@ -21,8 +21,8 @@ void for_each_t(std::vector<int>::iterator begin, std::vector<int>::iterator end
     
     if (step > 2500) {
             step /= 2;
-            std::async(for_each_t,begin, end - step, std::ref(f));
-            std::async(for_each_t, begin+step, end, std::ref(f));
+            std::async(&for_each_t,begin, end - step, std::ref(f));
+            for_each_t( begin+step, end, f);
     }
     else
         for (begin; begin != end; begin++) {
@@ -42,21 +42,21 @@ void set_random(std::vector<int>& v) {
 int main()
 {
     std::vector<int> vec(1'000'000);
-    /*std::vector<int> vec2(1'000'000);*/
+    std::vector<int> vec2(1'000'000);
     set_random(vec);
-    /*set_random(vec2)*/;
-    /*auto start1 = std::chrono::high_resolution_clock::now();
+    set_random(vec2);
+    auto start1 = std::chrono::high_resolution_clock::now();
     for_each(vec2.begin(), vec2.end(), multiplication);
     auto end1 = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double, std::milli> times1 = end1 - start1;
-    auto time1=times1.count();*/
+    auto time1=times1.count();
 
     auto start2 = std::chrono::high_resolution_clock::now();
     for_each_t( vec.begin(), vec.end() , multiplication);
     auto end2 = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double, std::milli> times2 = end2 - start2;
     auto time2 = times2.count();
-    /*std::cout << "standart " << time1 << " \t" << "multithread " << time2;*/
+    std::cout << "standart " << time1 << " \t" << "multithread " << time2;
     /*for (auto t : vec) {
         std::cout << t << " ";
     }*/
