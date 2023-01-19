@@ -2,10 +2,21 @@
 //
 
 #include <iostream>
+#include "circle.h"
+#include "cube.h"
+#include "cylinder.h"
+#include "line.h"
+#include "shape.h"
+#include "sqr.h"
+
+
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    Line l(6, 9, 12, 3);
+    l.scale(3);
+    return 0;
+    
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
