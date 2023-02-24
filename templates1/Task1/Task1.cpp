@@ -4,6 +4,7 @@
 #include "map"
 #include <queue>
 #include "iostream"
+#include <vector>
 
 class SQL {
 public:
@@ -11,6 +12,7 @@ public:
     std::queue <std::string> column;
     std::string from;
     std::map<std::string, std::string>where;
+    std::string znak= "=";
 };
 
 class SqlSelectQueryBuilder {
@@ -50,18 +52,36 @@ public:
             auto itend = sql.where.end();
             itend--;
             if (it== itend) {
-                std::cout << it->first << "=" << it->second;
+                std::cout << it->first << sql.znak << it->second;
             }
             else {
-                std::cout << it->first << "=" << it->second << " END ";
+                std::cout << it->first << sql.znak << it->second << " END ";
             }
         }
-        std::cout << ';' << '"';
+        std::cout << ';' << '"'<<std::endl;
     }
-private:
+     SqlSelectQueryBuilder&  AddWheres(const std::map<std::string, std::string>& kv) noexcept {
+        sql.where = kv;
+        return *this;
+    }
+    SqlSelectQueryBuilder& AddColumns(const std::vector<std::string>& columns) noexcept {
+        for (auto t : columns) {
+            sql.column.push(t);
+        }
+        return *this;
+    }
+    ~SqlSelectQueryBuilder() {
+        sql.where.clear();
+        sql.from.clear();
+
+    }
+protected:
     
     SQL sql;
 };
+
+
+
 
 int main() {
     
@@ -69,8 +89,22 @@ int main() {
     query_builder.AddColumn("name").AddColumn("phone");
     query_builder.AddFrom("students");
     query_builder.AddWhere("id", "42").AddWhere("name", "John");
-
     query_builder.BuildQuery();
+    
+    
+    SqlSelectQueryBuilder query_builder1;
+    std::vector < std::string > col= {"name1","phone1"};
+    std::map< std::string, std::string>where = { {"id","45"},{"name", "Johnb"} };
+
+    query_builder1.AddColumns(col);
+    query_builder1.AddFrom("students");
+    query_builder1.AddWheres(where);
+    query_builder1.BuildQuery();
+
+
+    
+
+
     return 0;
 }
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
