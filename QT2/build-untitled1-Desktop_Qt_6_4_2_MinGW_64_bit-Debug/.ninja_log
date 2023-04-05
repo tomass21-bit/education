@@ -1,0 +1,20 @@
+# ninja log v5
+5	820	7024183051756863	build.ninja	de8ce625389af047
+1	1057	7024180174344081	untitled1_autogen/timestamp	8dbf5fffcdde58c5
+1	1057	7024180174344081	untitled1_autogen/mocs_compilation.cpp	8dbf5fffcdde58c5
+1065	3376	7024180199503967	CMakeFiles/untitled1.dir/main.cpp.obj	bac50de26f6f522e
+1	26	0	CMakeFiles/clean.additional	baedbe210acaa455
+1	1057	7024180174344081	D:/GIT/education/QT2/build-untitled1-Desktop_Qt_6_4_2_MinGW_64_bit-Debug/untitled1_autogen/timestamp	8dbf5fffcdde58c5
+1	1057	7024180174344081	D:/GIT/education/QT2/build-untitled1-Desktop_Qt_6_4_2_MinGW_64_bit-Debug/untitled1_autogen/mocs_compilation.cpp	8dbf5fffcdde58c5
+1058	3353	7024180199274076	CMakeFiles/untitled1.dir/untitled1_autogen/mocs_compilation.cpp.obj	b7506623c5da6668
+1062	3464	7024180200394081	CMakeFiles/untitled1.dir/mainwindow.cpp.obj	5f92af629f2ae33e
+3465	3709	7024180202813954	untitled1.exe	8e990c2783c4cf15
+27	35	0	clean	577b940aee94fbd7
+17	959	7024183062523666	untitled1_autogen/timestamp	8dbf5fffcdde58c5
+17	959	7024183062523666	untitled1_autogen/mocs_compilation.cpp	8dbf5fffcdde58c5
+17	959	7024183062523666	D:/GIT/education/QT2/build-untitled1-Desktop_Qt_6_4_2_MinGW_64_bit-Debug/untitled1_autogen/timestamp	8dbf5fffcdde58c5
+17	959	7024183062523666	D:/GIT/education/QT2/build-untitled1-Desktop_Qt_6_4_2_MinGW_64_bit-Debug/untitled1_autogen/mocs_compilation.cpp	8dbf5fffcdde58c5
+964	2963	7024183084603694	CMakeFiles/untitled1.dir/untitled1_autogen/mocs_compilation.cpp.obj	b7506623c5da6668
+960	3027	7024183085243658	CMakeFiles/untitled1.dir/main.cpp.obj	bac50de26f6f522e
+968	3048	7024183085463777	CMakeFiles/untitled1.dir/mainwindow.cpp.obj	5f92af629f2ae33e
+3048	3225	7024183087193775	untitled1.exe	8e990c2783c4cf15
