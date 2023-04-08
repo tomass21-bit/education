@@ -1,14 +1,11 @@
-#include "mainwindow.h"
+#include <QCoreApplication>
 
-#include <QApplication>
 #include <QLocalSocket>
 #include <QSqlDatabase>
 int main(int argc, char *argv[])
 {
-    QApplication a(argc, argv);
-    MainWindow w;
+    QCoreApplication a(argc, argv);
     QSqlDatabase d;
     QLocalSocket n;
-    w.show();
     return a.exec();
 }
